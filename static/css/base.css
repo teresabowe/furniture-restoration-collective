@@ -1,15 +1,13 @@
-html {
-    height: 100%;
-}
 
 ul {
     margin-bottom: 0rem;
 }
 
 body {
-    background: url('') no-repeat center center fixed;
+    background: url('/media/martin-pechy-bpg-ngqrPc8-unsplash.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    background-position: top;
+    height: calc(130vh - 164px);
     color: #555;
     font-family: 'Poppins', sans-serif;
 }
@@ -29,6 +27,40 @@ body {
 .text-black {
     color: #000 !important;
 }
+
+.text-white {
+    color: white !important;
+}
+
+.caption-background {
+    bottom: 2rem;
+    z-index: 10;
+}
+
+.shop-now-button {
+    background: rgb(121, 116, 58);
+    color: white;
+    min-width: 260px;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: rgb(151, 145, 74);
+    color: white;
+}
+
+.fade-in-text {
+    animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
 /* -------------------------------- Media Queries */
 
