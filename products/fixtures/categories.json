@@ -1,0 +1,82 @@
+[
+    {
+        "pk": 1,
+        "model": "products.category",
+        "fields": {
+            "name": "sofas",
+            "friendly_name": "Sofas"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.category",
+        "fields": {
+            "name": "shelving_bookcases",
+            "friendly_name": "Shelving & Bookcases"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.category",
+        "fields": {
+            "name": "side_tables",
+            "friendly_name": "Side Tables"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.category",
+        "fields": {
+            "name": "chairs",
+            "friendly_name": "Chairs"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.category",
+        "fields": {
+            "name": "dining_set",
+            "friendly_name": "Dining Set"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.category",
+        "fields": {
+            "name": "side_boards",
+            "friendly_name": "Side Boards"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.category",
+        "fields": {
+            "name": "beds",
+            "friendly_name": "Beds"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.category",
+        "fields": {
+            "name": "wardrobes",
+            "friendly_name": "Wardrobes"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.category",
+        "fields": {
+            "name": "bedside_tables",
+            "friendly_name": "Bedside Tables"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.category",
+        "fields": {
+            "name": "dressing_tables",
+            "friendly_name": "Dressing Tables"
+        }
+    }
+]
