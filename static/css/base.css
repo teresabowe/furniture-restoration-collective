@@ -9,7 +9,7 @@ ul {
 body {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.05)), url('/media/julian-hochgesang-4DqsMC4-QQc-unsplash.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(110vh - 164px);
+    height: calc(100vh - 164px);
     color: #555;
     font-family: 'Poppins', sans-serif;
     background-color: #000000;
@@ -29,6 +29,14 @@ body {
 
 .text-black {
     color: #000 !important;
+}
+
+.bg-black {
+    background: #000 !important;
+}
+
+.bg-green {
+    background: rgb(121, 116, 58);
 }
 
 .text-white {
@@ -100,3 +108,13 @@ body {
     }
 }
 
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+}
