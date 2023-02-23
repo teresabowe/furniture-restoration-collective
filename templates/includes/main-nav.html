@@ -18,10 +18,10 @@
                 Living
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Sofas</a>
-                <a href="" class="dropdown-item">Shelving &amp; Book Cases</a>
-                <a href="" class="dropdown-item">Side Tables</a>
-                <a href="" class="dropdown-item">All Living</a>
+                <a href="{% url 'products' %}?category=sofas" class="dropdown-item">Sofas</a>
+                <a href="{% url 'products' %}?category=shelving_bookcases" class="dropdown-item">Shelving &amp; Book Cases</a>
+                <a href="{% url 'products' %}?category=side_tables" class="dropdown-item">Side Tables</a>
+                <a href="{% url 'products' %}?category=shelving_bookcases,sofas,side_tables" class="dropdown-item">All Living</a>
             </div>
         </li>
 
@@ -30,10 +30,10 @@
                 Dining
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Chairs</a>
-                <a href="" class="dropdown-item">Table &amp; Chairs</a>
-                <a href="" class="dropdown-item">Side Boards</a>
-                <a href="" class="dropdown-item">All Dining</a>
+                <a href="{% url 'products' %}?category=chairs" class="dropdown-item">Chairs</a>
+                <a href="{% url 'products' %}?category=dining_set" class="dropdown-item">Table &amp; Chairs</a>
+                <a href="{% url 'products' %}?category=side_boards" class="dropdown-item">Side Boards</a>
+                <a href="{% url 'products' %}?category=side_boards,dining_set,chairs" class="dropdown-item">All Dining</a>
             </div>
         </li>
 
@@ -41,12 +41,12 @@
             <a class="logo-font nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Bedroom
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Beds</a>
-                <a href="" class="dropdown-item">Wardrobes</a>
-                <a href="" class="dropdown-item">Dressing Tables</a>
-                <a href="" class="dropdown-item">Bedside Tables</a>
-                <a href="" class="dropdown-item">All Bedroom</a>
+            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">+
+                <a href="{% url 'products' %}?category=beds" class="dropdown-item">Beds</a>
+                <a href="{% url 'products' %}?category=wardrobes" class="dropdown-item">Wardrobes</a>
+                <a href="{% url 'products' %}?category=dressing_tables" class="dropdown-item">Dressing Tables</a>
+                <a href="{% url 'products' %}?category=bedside_tables" class="dropdown-item">Bedside Tables</a>
+                <a href="{% url 'products' %}?category=bedside_tables,dressing_tables,wardrobes,beds" class="dropdown-item">All Bedroom</a>
             </div>
         </li>
 
@@ -55,11 +55,11 @@
                 Commercial
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Chairs</a>
-                <a href="" class="dropdown-item">Sofas</a>
-                <a href="" class="dropdown-item">Dressers</a>
-                <a href="" class="dropdown-item">Shelving &amp; Book Cases</a>
-                <a href="" class="dropdown-item">All Commercial Sales</a>
+                <a href="{% url 'products' %}?category=chairs" class="dropdown-item">Chairs</a>
+                <a href="{% url 'products' %}?category=sofas" class="dropdown-item">Sofas</a>
+                <a href="{% url 'products' %}?category=side_boards" class="dropdown-item">Side Boards</a>
+                <a href="{% url 'products' %}?category=shelving_bookcases" class="dropdown-item">Shelving &amp; Book Cases</a>
+                <a href="{% url 'products' %}?category=shelving_bookcases,chairs,sofas,side_boards" class="dropdown-item">All Commercial Sales</a>
             </div>
         </li>
 
@@ -68,9 +68,9 @@
                 Specials
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
 
