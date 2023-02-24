@@ -31,6 +31,10 @@ body {
     color: #000 !important;
 }
 
+.text-green {
+    color: rgb(121, 116, 58);
+}
+
 .bg-black {
     background: #000 !important;
 }
@@ -83,6 +87,22 @@ body {
 	z-index: -1;
 }
 
+a.category-badge > span.badge:hover {
+    background: rgb(114, 49, 49);
+    color: #fff !important;
+}
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link {
+    cursor: pointer;
+}
 
 /* -------------------------------- Media Queries */
 
