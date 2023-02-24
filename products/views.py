@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
-from .models import Product, Category
+from .models import Product, Category, Crafter
 
 
 def all_products(request):
@@ -11,6 +11,7 @@ def all_products(request):
 
     query = None
     categories = None
+    crafters = None
     sort = None
     direction = None
 
@@ -34,6 +35,11 @@ def all_products(request):
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
+        if 'crafter' in request.GET:
+            crafters = request.GET['crafter'].split(',')
+            products = products.filter(crafter__first_name__in=crafters)
+            crafters = Crafter.objects.filter(first_name__in=crafters)
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -49,6 +55,7 @@ def all_products(request):
         'products': products,
         'search_term': query,
         'current_categories': categories,
+        'current_crafters': crafters,
         'current_sorting': current_sorting,
     }
 
