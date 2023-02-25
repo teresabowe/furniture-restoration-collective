@@ -80,9 +80,9 @@
                                             </p>
                                             {% endif %}
                                             {% if product.crafter %}
-                                            <p class="small mt-1 mb-0">
+                                            <p class="small mt-1 mb-0"> Restored by 
                                                 <a class="text-muted" href="{% url 'products' %}?crafter={{ product.crafter.first_name }}">
-                                                    <i class="fas fa-tag mr-1"></i>{{ product.crafter.full_name }}
+                                                    {{ product.crafter.full_name }}.
                                                 </a>
                                             </p>
                                             {% endif %}
