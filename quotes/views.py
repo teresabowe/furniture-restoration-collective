@@ -13,13 +13,13 @@ class QuoteListView(ListView):
 class QuoteCreateView(CreateView):
     model = Quote
     form_class = QuoteForm
-    success_url = reverse_lazy('quote_changelist')
+    success_url = '/quotes/add/'
 
 
 class QuoteUpdateView(UpdateView):
     model = Quote
     form_class = QuoteForm
-    success_url = reverse_lazy('quote_changelist')
+    success_url = '/quotes/add/'
 
 
 # AJAX
