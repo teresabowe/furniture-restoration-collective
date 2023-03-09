@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<!doctype html>
+<html lang="en">
+<div class="overlay"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dependent Dropdown in Django</title>
+</head>
+
+<body>
+
+<h2>Quote Form</h2>
+    <div class="row">
+        <div class="col-md-8 mt-3 mb-5 offset-md-2">
+            <form method="post" id="quoteForm" data-categories-url="{% url 'ajax_load_categories' %}">
+                {% csrf_token %} 
+                {{ form|crispy }} 
+            <input type="submit" value="Save" class="btn btn-signup right mb-5">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript"></script>
+<script>
+    $("#id_quotecategory").change(function () {
+      var url = $("#quoteForm").attr("data-categories-url");  // get the url of the `load_cities` view
+      var categoryId = $(this).val();  // get the selected country ID from the HTML input
+
+      $.ajax({                       // initialize an AJAX request
+        url: url,                    // set the url of the request (= localhost:8000/hr/ajax/load-cities/)
+        data: {
+          'quotecategory': categoryId       // add the country id to the GET parameters
+        },
+        success: function (data) {   // `data` is the return of the `load_cities` view function
+          $("#id_quotecategorydetail").html(data);  // replace the contents of the city input with the data that came from the server
+        }
+      });
+
+    });
+</script>
+{% endblock %}
+
