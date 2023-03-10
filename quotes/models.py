@@ -21,15 +21,21 @@ class QuoteCategoryDetail(models.Model):
 
     quotecategory = models.ForeignKey(QuoteCategory(), on_delete=models.CASCADE)
     name = models.CharField(max_length=254, null=True, blank=True)
+    price = models.DecimalField(max_digits=6, decimal_places=2, default=00.00)
 
     def __str__(self):
         return self.name
 
+PICKUP_CHOICES =(
+    ("Y", "Yes, I need you to pickup my furniture"),
+    ("N", "No, I will drop it to your shop"),
+)
 
 class Quote(models.Model):
     quote_number = models.CharField(max_length=32, null=False, editable=False)
     quotecategory = models.ForeignKey(QuoteCategory(), on_delete=models.SET_NULL, blank=True, null=True)
     quotecategorydetail = models.ForeignKey(QuoteCategoryDetail, on_delete=models.SET_NULL, blank=True, null=True)
+    pickup = models.CharField(max_length=3, choices=PICKUP_CHOICES, default='N')
 
     def _generate_quote_number(self):
         """
