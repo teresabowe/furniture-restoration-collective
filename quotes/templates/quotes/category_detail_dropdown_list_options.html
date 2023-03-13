@@ -1,4 +1,4 @@
-<option value="">--------</option>
+<option value="">---------</option>
 {% for detail in category_detail %}
-<option value="{{ detail.pk }}">{{ detail.name }}</option>
+<option value="{{ detail.pk }}">{{ detail.name }} {{ detail.price }}</option>
 {% endfor %}

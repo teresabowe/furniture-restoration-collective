@@ -12,6 +12,7 @@ class QuoteCategoryDetailAdmin(admin.ModelAdmin):
     list_display = (
         'quotecategory',
         'name',
+        'price',
     )
 
 
@@ -19,6 +20,11 @@ class QuoteAdmin(admin.ModelAdmin):
     list_display = (
         'quotecategory',
         'quotecategorydetail',
+        'pickup',
+        'base_price',
+        'pickup_price',
+        'total_price',
+        'date',
     )
 
 
