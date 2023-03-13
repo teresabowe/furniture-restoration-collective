@@ -5,7 +5,7 @@ from quotes.models import Quote, QuoteCategoryDetail
 class QuoteForm(forms.ModelForm):
     class Meta:
         model = Quote
-        fields = ('quotecategory', 'quotecategorydetail', 'pickup', 'base_price', 'pickup_price', 'total_price')
+        fields = ('quotecategory', 'quotecategorydetail', 'base_price', 'pickup', 'pickup_price', 'total_price')
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

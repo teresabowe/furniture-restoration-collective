@@ -28,7 +28,10 @@
 <h2>Quote Form</h2>
     <div class="row">
         <div class="col-md-8 mt-3 mb-5 offset-md-2">
-            <form method="post" id="quoteForm" data-categories-url="{% url 'ajax_load_categories' %}" data-categorydetail-url="{% url 'ajax_load_quotecategorydetail' %}">
+            <form method="post" id="quoteForm" 
+                    data-categories-url="{% url 'ajax_load_categories' %}" 
+                    data-categorydetail-url="{% url 'ajax_load_quotecategorydetail' %}"
+                    data-pickup-url="{% url 'ajax_load_pickup' %}">
                 {% csrf_token %} 
                 {{ form|crispy }}
             <input type="submit" value="Save" class="btn btn-signup right mb-5">
@@ -76,9 +79,27 @@
                     },
                     success: function (data) {   
                     $("#id_base_price").val(data.price);
+                        console.log(data.price);
                     }
                 })})
 
+    
+    $("#id_pickup").change(function () {
+        var url03 = $("#quoteForm").attr("data-pickup-url");  
+        var pickupId = $(this).val();  
+                $.ajax({                       
+                    url: url03,                 
+                    data: {
+                    'pickup': pickupId 
+                    },
+                    
+                    success: function (data) {   
+                    $("#id_pickup_price").val(data.pickup);
+                        console.log(data.pickup);
+                    }
+                    
+                })})
+          
 </script>
 {% endblock %}
 

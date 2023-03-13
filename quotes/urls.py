@@ -9,4 +9,5 @@ urlpatterns = [
 
     path('ajax/load-categories/', views.load_categories, name='ajax_load_categories'),
     path('ajax/load-quotecategorydetail/', views.load_quotecategorydetail, name='ajax_load_quotecategorydetail'),
+    path('ajax/load-pickup/', views.load_pickup, name='ajax_load_pickup'),
 ]

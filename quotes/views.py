@@ -32,6 +32,18 @@ def load_categories(request):
 
 def load_quotecategorydetail(request):
     name_id = request.GET.get('name')
+    print("name_id")
+    print(name_id)
     price = QuoteCategoryDetail.objects.filter(id=name_id).first().price
     data = {'price': price}
+    return JsonResponse(data)
+
+
+def load_pickup(request):
+    pickup_id = request.GET.get('pickup')
+    if pickup_id == "Y":
+        pickup_price = 50
+    else:
+        pickup_price = 00
+    data = {'pickup': pickup_price}
     return JsonResponse(data)
