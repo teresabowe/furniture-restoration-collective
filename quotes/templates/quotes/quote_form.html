@@ -31,11 +31,11 @@
             <form method="post" id="quoteForm" 
                     data-categories-url="{% url 'ajax_load_categories' %}" 
                     data-categorydetail-url="{% url 'ajax_load_quotecategorydetail' %}"
-                    data-pickup-url="{% url 'ajax_load_pickup' %}">
+                    data-pickup-url="{% url 'ajax_load_pickup' %}">  
                 {% csrf_token %} 
                 {{ form|crispy }}
             <input type="submit" value="Save" class="btn btn-signup right mb-5">
-            
+            </form>
         </div>
     </div>
 </body>
@@ -53,10 +53,7 @@
 
     $("#id_quotecategory").change(function () {
         var url = $("#quoteForm").attr("data-categories-url");  // get the url of the `load_categories` view
-        console.log(url);
-        var categoryId = $(this).val();  // get the selected category ID from the HTML input
-        console.log(categoryId);
-       
+        var categoryId = $(this).val();  // get the selected category ID from the HTML input       
                 $.ajax({                       // initialize an AJAX request
                     url: url,                    // set the url of the request (= localhost:8000/hr/ajax/load-categories/)
                     data: {
@@ -69,37 +66,37 @@
 
     $("#id_quotecategorydetail").change(function () {
         var url02 = $("#quoteForm").attr("data-categorydetail-url");  
-        console.log(url02);
-        var nameId = $(this).val();  
-        console.log(nameId);    
+        var nameId = $(this).val(); 
+        var pickup_price = $("#id_pickup_price").val();
                 $.ajax({                       
                     url: url02,                 
                     data: {
-                    'name': nameId      
+                    'name': nameId,
+                    'pickup_price': pickup_price      
                     },
                     success: function (data) {   
                     $("#id_base_price").val(data.price);
-                        console.log(data.price);
+                    $("#id_total_price").val(data.total_price);
                     }
                 })})
 
     
     $("#id_pickup").change(function () {
         var url03 = $("#quoteForm").attr("data-pickup-url");  
-        var pickupId = $(this).val();  
+        var pickupId = $(this).val(); 
+        var base_price = $("#id_base_price").val();
                 $.ajax({                       
                     url: url03,                 
                     data: {
-                    'pickup': pickupId 
+                    'pickup': pickupId, 
+                    'base_price' : base_price
                     },
-                    
                     success: function (data) {   
                     $("#id_pickup_price").val(data.pickup);
-                        console.log(data.pickup);
+                    $("#id_total_price").val(data.total_price);
                     }
-                    
                 })})
-          
+ 
 </script>
 {% endblock %}
 

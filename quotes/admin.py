@@ -18,6 +18,7 @@ class QuoteCategoryDetailAdmin(admin.ModelAdmin):
 
 class QuoteAdmin(admin.ModelAdmin):
     list_display = (
+        'quote_number',
         'quotecategory',
         'quotecategorydetail',
         'pickup',

@@ -60,11 +60,3 @@ class Quote(models.Model):
         if not self.quote_number:
             self.quote_number = self._generate_quote_number()
         super().save(*args, **kwargs)
-
-    def save(self, *args, **kwargs):
-        """
-        Override the original save method to set the pickup price.
-        """
-        if self.pickup == "Y":
-            self.pickup_price = "50.00"
-        super().save(*args, **kwargs)

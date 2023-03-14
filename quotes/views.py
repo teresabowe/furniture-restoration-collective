@@ -31,19 +31,21 @@ def load_categories(request):
 
 
 def load_quotecategorydetail(request):
+    pickup_price = request.GET.get('pickup_price')
     name_id = request.GET.get('name')
-    print("name_id")
-    print(name_id)
     price = QuoteCategoryDetail.objects.filter(id=name_id).first().price
-    data = {'price': price}
+    total_price = float(pickup_price) + float(price)
+    data = {'price': price, 'total_price': total_price}
     return JsonResponse(data)
 
 
 def load_pickup(request):
+    base_price = request.GET.get('base_price')
     pickup_id = request.GET.get('pickup')
     if pickup_id == "Y":
-        pickup_price = 50
+        pickup_price = 50.00
     else:
-        pickup_price = 00
-    data = {'pickup': pickup_price}
+        pickup_price = 00.00
+    total_price = float(pickup_price) + float(base_price)
+    data = {'pickup': pickup_price, 'total_price': total_price}
     return JsonResponse(data)
