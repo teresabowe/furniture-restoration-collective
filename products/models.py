@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models import Q
 
 
 class Category(models.Model):
@@ -7,6 +8,22 @@ class Category(models.Model):
         verbose_name_plural = "Categories"
 
     name = models.CharField(max_length=254)
+    friendly_name = models.CharField(max_length=254, null=True, blank=True)
+
+    def __str__(self):
+        return self.name
+
+    def get_friendly_name(self):
+        return self.friendly_name
+
+
+class Subcategory(models.Model):
+
+    class Meta:
+        verbose_name_plural = "Sub Categories"
+
+    name = models.CharField(max_length=254)
+    category = models.ForeignKey(Category(), on_delete=models.CASCADE, default="1")
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
     def __str__(self):
@@ -40,8 +57,16 @@ class Source(models.Model):
         return self.source_friendly_name
 
 
+QUOTE = (
+    ("Y", "Yes"),
+    ("N", "No"),
+)
+
+
 class Product(models.Model):
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL, limit_choices_to=Q(name="chairs") | Q(name="sofas"))
+    subcategory = models.ForeignKey('Subcategory', null=True, blank=True, on_delete=models.SET_NULL)
+    quote = models.CharField(max_length=3, choices=QUOTE, default='N')
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     description = models.TextField()

@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<!doctype html>
+<html lang="en">
+<div class="overlay"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Custom Quote</title>
+</head>
+
+<body>
+<h1>{{product_id}}</h1>
+<h2>Quote Form</h2>
+    <div class="row">
+        <div class="col-md-8 mt-3 mb-5 offset-md-2">
+            <form method="post" id="ProductQuoteForm"
+                data-subcategories-url="{% url 'ajax_load_subcategories' %}"
+                data-price-url="{% url 'ajax_load_price' %}">
+                   
+                {% csrf_token %} 
+                {{ form|crispy }}
+                                
+                <a href="javascript:getProductId();">Get Quote Detail</a>
+            </form>
+            
+        </div>
+    </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript"></script>
+<script>
+
+    $("#id_category").change(function () {
+            var url = $("#ProductQuoteForm").attr("data-subcategories-url");  
+            var category_Id = $(this).val(); 
+                    $.ajax({                       
+                        url: url,                 
+                        data: {
+                        'name': category_Id,
+                        },
+                        success: function (data) {   
+                        $("#id_subcategory").html(data);
+                        }
+                    })})
+    $("#id_subcategory").change(function () {
+            var url02 = $("#ProductQuoteForm").attr("data-price-url");  
+            var subcategory_Id = $(this).val(); 
+                    $.ajax({                       
+                        url: url02,                 
+                        data: {
+                        'name': subcategory_Id,
+                        },
+                        success: function (data) {   
+                        $("#id_price").val(data.price);
+                        $("#id_name").val(data.name);
+                        $("#id_product").val(data.id);
+                        getResponse(data);
+                        }
+                    })})  
+    
+    // get data outside success call
+    var data; 
+    function getResponse(response) {
+        data = response;
+        product_id = data.id;
+        }
+
+    // update url for product detail with user selected product id
+    function getProductId() {
+        window.location.href = '/products/' + product_id;
+        }
+                    
+</script>
+{% endblock %}
+

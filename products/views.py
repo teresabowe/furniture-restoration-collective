@@ -1,15 +1,19 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.views.generic import ListView, CreateView, UpdateView
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
+from . forms import ProductQuoteForm
+from django.http import JsonResponse
 
-from .models import Product, Category, Crafter, Source
+
+from .models import Product, Category, Crafter, Source, Subcategory
 
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
-    products = Product.objects.all()
+    products = Product.objects.all().filter(quote="N")
 
     query = None
     categories = None
@@ -80,3 +84,28 @@ def product_detail(request, product_id):
     }
 
     return render(request, 'products/product_detail.html', context)
+
+
+class ProductQuoteCreateView(CreateView):
+    model = Product
+    queryset = Product.objects.all().filter(quote="Y")
+    form_class = ProductQuoteForm
+    success_url = 'product_detail'
+    template_name = 'products/quote_form.html'
+
+
+# AJAX
+
+def load_subcategories(request):
+    category_id = request.GET.get('name')
+    subcategories = Product.objects.filter(category_id=category_id) & Product.objects.filter(quote="Y")
+    return render(request, 'products/subcategory_detail_dropdown_list_options.html', {'subcategories': subcategories})
+
+
+def load_price(request):
+    subcategory_id = request.GET.get('name')
+    price = Product.objects.filter(id=subcategory_id).first().price
+    name = Product.objects.filter(id=subcategory_id).first().name
+    id = Product.objects.filter(id=subcategory_id).first().id
+    data = {'price': price, 'name': name, 'id': id}
+    return JsonResponse(data)
