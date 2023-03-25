@@ -68,6 +68,22 @@ body {
     color: white;
 }
 
+.quote-now-button {
+    background: rgb(94, 89, 33);
+    color: white;
+    min-width: 260px;
+}
+
+.quote-now-button:hover,
+.quote-now-button:active,
+.quote-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: rgb(151, 145, 74);
+    color: white;
+}
+
 .fade-in-text {
     animation: fadeIn 5s;
 }

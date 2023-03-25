@@ -14,16 +14,17 @@
         <div class="row h-100 mt-5 pt-5">
             <div class="col-12 col-md-12 my-auto text-center">
                 <h1 class="display-4 text-white caption-background fade-in-text">
-                    Our crafters carefully restore and sell furniture.
+                    Visit our furniture shop or get a custom quote for your project.
                 </h1>
-                <p class="display-7 text-white caption-background fade-in-text">
-                    Visit our shop here online or come in person to our shop in Frances Street, Dublin.
-                </p>
+                
                 <div class="my-5">
                     <h4>
-                        <a href="{% url 'products' %}" class="shop-now-button btn rounded-pill text-uppercase py-3 fade-in-text">Shop Now</a>
+                        <a href="{% url 'products' %}" class="shop-now-button btn text-uppercase py-3 fade-in-text">Shop Now</a>
+                        <a href="{% url 'product_quote_add' %}" class="quote-now-button btn text-uppercase py-3 fade-in-text">Get a Quote</a>
                     </h4>
+                    
                 </div>
+                
             </div>
         </div>
     </div>  
