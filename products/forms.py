@@ -6,7 +6,7 @@ class ProductQuoteForm(forms.ModelForm):
 
     class Meta:
         model = Product
-        fields = ('category', 'subcategory', 'price', 'name', )
+        fields = ('category', 'subcategory', 'name', 'price', )
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
