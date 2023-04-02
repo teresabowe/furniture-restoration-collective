@@ -7,6 +7,7 @@ urlpatterns = [
 
     path('quote/', views.ProductQuoteCreateView.as_view(), name='product_quote_add'),
     path('add/', views.add_product, name='add_product'),
+    path('edit/<int:product_id>/', views.edit_product, name='edit_product'),
 
     path('ajax/load-subcategories/', views.load_subcategories, name='ajax_load_subcategories'),
     path('ajax/load-price/', views.load_price, name='ajax_load_price'),
