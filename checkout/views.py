@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.conf import settings
-from django.core.mail import EmailMessage
+from django.core.mail import send_mail
 
 from .forms import OrderForm
 from .models import Order, OrderLineItem
@@ -131,6 +131,14 @@ def checkout_success(request, order_number):
         order.user_profile = profile
         order.save()
 
+        send_mail(
+            "Your Order with Furniture Restoration Collective",
+            "Dear Customer, Thank you! We confirm your order with us.  Please check your profile on our website for full order details.  From the team at Furniture Restoration Collective",
+            "furniturerestorationcollective@gmail.com",
+            [{order.email}],
+            fail_silently=False,
+        )
+
         # Save the user's info
         if save_info:
             profile_data = {
@@ -150,15 +158,6 @@ def checkout_success(request, order_number):
         Your order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
 
-    if request.method == "POST":
-        # Get email information via post request
-        to_email = request.POST.get("to", {order.email})
-        subject = request.POST.get("subject", "Your Order with Furniture Restoration Collective")
-        message = request.POST.get("message", "Thank you for your order")
-        if to_email and message:
-            email = EmailMessage(subject=subject, body=body, to=[to])
-            email.send()
-
     if 'bag' in request.session:
         del request.session['bag']
 
@@ -167,4 +166,5 @@ def checkout_success(request, order_number):
         'order': order,
     }
 
+    
     return render(request, template, context)
