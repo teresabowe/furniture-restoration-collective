@@ -149,6 +149,15 @@ def checkout_success(request, order_number):
         Your order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
 
+    if request.method == "POST":
+        # Get email information via post request
+        to_email = request.POST.get("to", {order.email})
+        subject = request.POST.get("subject", "Your Order with Furniture Restoration Collective")
+        message = request.POST.get("message", "Thank you for your order")
+        if to_email and message:
+            email = EmailMessage(subject=subject, body=body, to=[to])
+            email.send()
+
     if 'bag' in request.session:
         del request.session['bag']
 
