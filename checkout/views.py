@@ -133,9 +133,9 @@ def checkout_success(request, order_number):
 
         send_mail(
             "Your Order with Furniture Restoration Collective",
-            "Dear Customer, Thank you! We confirm your order with us.  Please check your profile on our website for full order details.  From the team at Furniture Restoration Collective",
+            "Dear Customer, Thank you! We confirm your order with us.  Please check your profile on our website for full order details.  From the team at Furniture Restoration Collective.",
             "furniturerestorationcollective@gmail.com",
-            [{order.email}],
+            {order.email},
             fail_silently=False,
         )
 
