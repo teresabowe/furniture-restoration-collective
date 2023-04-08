@@ -133,7 +133,7 @@ def checkout_success(request, order_number):
 
         send_mail(
             "Your Order with Furniture Restoration Collective",
-            "Dear Customer, Thank you! We confirm your order with us.  Please check your profile on our website for full order details.  From the team at Furniture Restoration Collective.",
+            f'Dear Customer,\n \nThank you! We confirm receipt of your order.\nThe order number is {order_number}. Please check your profile on our website for full details.\n \nFrom the team at Furniture Restoration Collective.\nhttps://furniture-restoration.herokuapp.com/',
             "furniturerestorationcollective@gmail.com",
             {order.email},
             fail_silently=False,
@@ -166,5 +166,4 @@ def checkout_success(request, order_number):
         'order': order,
     }
 
-    
     return render(request, template, context)
