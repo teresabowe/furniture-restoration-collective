@@ -6,6 +6,8 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from . forms import ProductQuoteForm
 from django.http import JsonResponse
+from django.template import loader
+from django.http import HttpResponse
 
 
 from .models import Product, Category, Crafter, Source, Subcategory
@@ -86,6 +88,23 @@ def product_detail(request, product_id):
     }
 
     return render(request, 'products/product_detail.html', context)
+
+
+@login_required
+def list_products(request):
+    """ List """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only shop owners can do that.')
+        return redirect(reverse('home'))
+
+    else:
+        listdata = Product.objects.all().values()
+        template = loader.get_template('products/list_products.html')
+        context = {
+            'mylist': listdata,
+        }
+
+        return HttpResponse(template.render(context, request))
 
 
 @login_required
