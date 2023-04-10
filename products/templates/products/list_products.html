@@ -51,7 +51,7 @@
                                 <td>{{product.quote}}</td>
                                 <td>{{product.name}}</td>
                                 <td>{{product.price}}</td>
-                                <td><a href=''><i class="fas fa-eye"></i></a></td>    
+                                <td><a href='{% url "view_product" product.id %}'><i class="fas fa-eye"></i></a></td>    
                                 <td><a href='{% url "edit_product" product.id %}'><i class="fa-sharp fa-regular fa-pen-to-square"></i></a></td>
                                 <td><a href='{% url "delete_product" product.id %}'><i class="fa-sharp fa-regular fa-circle-xmark"></i></a></td>
                             </tr>

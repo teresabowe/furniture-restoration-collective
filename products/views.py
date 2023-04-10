@@ -4,7 +4,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from . forms import ProductQuoteForm
+from . forms import ProductQuoteForm, ViewProductForm
 from django.http import JsonResponse
 from django.template import loader
 from django.http import HttpResponse
@@ -119,7 +119,7 @@ def add_product(request):
         if form.is_valid():
             product = form.save()
             messages.success(request, 'Successfully added product!')
-            return redirect(reverse('product_detail', args=[product.id]))
+            return redirect(reverse('list_products'))
         else:
             messages.error(request, 'Failed to add product. Please ensure the form is valid.')
     else:
@@ -147,7 +147,7 @@ def edit_product(request, product_id):
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully updated product!')
-            return redirect(reverse('product_detail', args=[product.id]))
+            return redirect(reverse('list_products'))
         else:
             messages.error(request, 'Failed to update product. Please ensure the form is valid.')
     else:
@@ -173,7 +173,36 @@ def delete_product(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, 'Product deleted!')
-    return redirect(reverse('products'))
+    return redirect(reverse('list_products'))
+
+
+@login_required
+def view_product(request, product_id):
+    """ View a product in the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only shop owners can do that.')
+        return redirect(reverse('home'))
+
+    product = get_object_or_404(Product, pk=product_id)
+    form = ViewProductForm(instance=product)
+    form.fields['sku'].disabled = True
+    form.fields['name'].disabled = True
+    form.fields['description'].disabled = True
+    form.fields['subcategory'].disabled = True
+    form.fields['category'].disabled = True
+    form.fields['quote'].disabled = True
+    form.fields['price'].disabled = True
+    form.fields['image'].disabled = True
+    form.fields['crafter'].disabled = True
+    form.fields['source'].disabled = True
+    messages.info(request, f'You are viewing {product.name}')
+    template = 'products/view_product.html'
+    context = {
+        'form': form,
+        'product': product,
+    }
+
+    return render(request, template, context)
 
 
 class ProductQuoteCreateView(CreateView):

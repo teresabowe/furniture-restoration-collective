@@ -39,3 +39,9 @@ class ProductForm(forms.ModelForm):
         self.fields['category'].choices = friendly_names
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'border-black rounded-0'
+
+
+class ViewProductForm(forms.ModelForm):
+    class Meta:
+        model = Product
+        fields = ('category', 'subcategory', 'quote', 'sku', 'name', 'description', 'price', 'image', 'crafter', 'source')
