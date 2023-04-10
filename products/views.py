@@ -212,7 +212,7 @@ def review_products(request):
         form = ProductReviewForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('review_products')
+            return redirect('profile')
     else:
         form = ProductReviewForm()
 
