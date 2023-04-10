@@ -242,6 +242,18 @@ a.category-badge > span.badge:hover {
     border-radius: 0;
 }
 
+.fa-square-plus {
+    color: green;
+}
+
+.fa-eye {
+    color: orange;
+  }
+
+.fa-circle-xmark {
+    color: red;
+  }
+
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
