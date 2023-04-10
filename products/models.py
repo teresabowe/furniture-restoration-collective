@@ -46,6 +46,18 @@ class Crafter(models.Model):
         return self.full_name
 
 
+class Review(models.Model):
+
+    class Meta:
+        verbose_name_plural = "Reviews"
+
+    comment = models.CharField(max_length=500)
+    crafter = models.ForeignKey(Crafter(), on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.comment
+
+
 class Source(models.Model):
     source_name = models.CharField(max_length=254)
     source_friendly_name = models.CharField(max_length=254, null=True, blank=True)

@@ -4,13 +4,13 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from . forms import ProductQuoteForm, ViewProductForm
+from . forms import ProductQuoteForm, ViewProductForm, ProductReviewForm
 from django.http import JsonResponse
 from django.template import loader
 from django.http import HttpResponse
 
 
-from .models import Product, Category, Crafter, Source, Subcategory
+from .models import Product, Category, Crafter, Source, Subcategory, Review
 from .forms import ProductForm
 
 
@@ -203,6 +203,20 @@ def view_product(request, product_id):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def review_products(request):
+    form = ProductReviewForm()
+    if request.method == 'POST':
+        form = ProductReviewForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('review_products')
+    else:
+        form = ProductReviewForm()
+
+    return render(request, "products/product_review_form.html", {'form': form})
 
 
 class ProductQuoteCreateView(CreateView):

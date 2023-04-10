@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product, Category, Crafter, Source, Subcategory
+from .models import Product, Category, Crafter, Source, Subcategory, Review
 
 
 class ProductAdmin(admin.ModelAdmin):
@@ -47,8 +47,16 @@ class SourceAdmin(admin.ModelAdmin):
     )
 
 
+class ReviewAdmin(admin.ModelAdmin):
+    list_display = (
+        'comment',
+        'crafter',
+    )
+
+
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Source, SourceAdmin)
 admin.site.register(Crafter, CrafterAdmin)
 admin.site.register(Subcategory, SubcategoryAdmin)
+admin.site.register(Review, ReviewAdmin)
