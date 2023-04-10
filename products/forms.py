@@ -50,4 +50,4 @@ class ViewProductForm(forms.ModelForm):
 class ProductReviewForm(forms.ModelForm):
     class Meta:
         model = Review
-        fields = "__all__"
+        fields = ('comment', 'crafter')
