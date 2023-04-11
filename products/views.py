@@ -4,13 +4,13 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from . forms import ProductQuoteForm, ViewProductForm, ProductReviewForm
+from . forms import ProductQuoteForm, ViewProductForm
 from django.http import JsonResponse
 from django.template import loader
 from django.http import HttpResponse
 
 
-from .models import Product, Category, Crafter, Source, Subcategory, Review
+from .models import Product, Category, Crafter, Source, Subcategory
 from .forms import ProductForm
 
 
