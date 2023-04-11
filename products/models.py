@@ -57,6 +57,25 @@ class Source(models.Model):
         return self.source_friendly_name
 
 
+ACTIVE = (
+    ("Y", "Yes"),
+    ("N", "No"),
+)
+
+
+class Review(models.Model):
+
+    class Meta:
+        verbose_name_plural = "Reviews"
+
+    comment = models.CharField(max_length=500)
+    crafter = models.ForeignKey(Crafter(), on_delete=models.CASCADE)
+    active = models.CharField(max_length=3, choices=ACTIVE, default='N')
+
+    def __str__(self):
+        return self.comment
+
+
 QUOTE = (
     ("Y", "Yes"),
     ("N", "No"),
