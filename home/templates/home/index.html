@@ -10,24 +10,23 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container h-100">
-        <div class="row h-100 mt-5 pt-5">
+    <div class="container">
+        <div class="row mt-5 pt-5 background-hero">
             <div class="col-12 col-md-12 my-auto text-center">
-                <h1 class="display-4 text-white caption-background fade-in-text">
-                    Visit our furniture shop or get a custom quote for your project.
+                <h1 class="display-5 text-white caption-background fade-in-text">
+                    Visit our furniture shop or get a custom quote.
                 </h1>
-                
                 <div class="my-5">
                     <h4>
                         <a href="{% url 'products' %}" class="shop-now-button btn text-uppercase py-3 fade-in-text">Shop Now</a>
                         <a href="{% url 'product_quote_add' %}" class="quote-now-button btn text-uppercase py-3 fade-in-text">Get a Quote</a>
                     </h4>
-                    
                 </div>
-                
             </div>
         </div>
     </div>  
+    <h1 class="text-center mb-3 mt-3 p-1">Our Crafters</h1>
+    <h4 class="text-center ">Find out more about our carpenters, cabinet makers and upholsterers.</h4>
     
 {% endblock %}
 

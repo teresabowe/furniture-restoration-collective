@@ -6,13 +6,13 @@ ul {
     margin-bottom: 0rem;
 }
 
-body {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.05)), url('/media/julian-hochgesang-4DqsMC4-QQc-unsplash.jpg') no-repeat center center fixed;
+.background-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.05)), url('/media/julian-hochgesang-4DqsMC4-QQc-unsplash.jpg') no-repeat center;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Poppins', sans-serif;
-    background-color: #000000;
+    background-color: white;
 }
 
 .logo-font {
@@ -150,16 +150,6 @@ a.category-badge > span.badge:hover {
     height: 2px;
 }
 
-
-/* -------------------------------- Media Queries */
-
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
-}
-
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
@@ -254,6 +244,17 @@ a.category-badge > span.badge:hover {
     color: red;
   }
 
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+      max-width: 100%;
+    }
+  }
+
+
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
@@ -267,6 +268,10 @@ a.category-badge > span.badge:hover {
     .header-container {
         padding-top: 164px;
     }
+
+    .container {
+        max-width: 100%;
+    }
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
@@ -277,5 +282,9 @@ a.category-badge > span.badge:hover {
 
     body {
         height: calc(100vh - 116px);
+    }
+    
+    .container {
+        max-width: 100%;
     }
 }
