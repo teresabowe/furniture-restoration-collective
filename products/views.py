@@ -10,7 +10,7 @@ from django.template import loader
 from django.http import HttpResponse
 
 
-from .models import Product, Category, Crafter, Source, Subcategory
+from .models import Product, Category, Crafter, Source, Subcategory, Review
 from .forms import ProductForm
 
 

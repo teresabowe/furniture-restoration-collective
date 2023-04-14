@@ -13,20 +13,59 @@
     <div class="container">
         <div class="row mt-5 pt-5 background-hero">
             <div class="col-12 col-md-12 my-auto text-center">
+                <h1 class="display-5 text-white caption-background">
+                    Our team restore and sell furniture.
+                </h1>
                 <h1 class="display-5 text-white caption-background fade-in-text">
-                    Visit our furniture shop or get a custom quote.
+                  We can also help you with your restoration project.
                 </h1>
                 <div class="my-5">
                     <h4>
-                        <a href="{% url 'products' %}" class="shop-now-button btn text-uppercase py-3 fade-in-text">Shop Now</a>
-                        <a href="{% url 'product_quote_add' %}" class="quote-now-button btn text-uppercase py-3 fade-in-text">Get a Quote</a>
+                        <a href="{% url 'products' %}" class="shop-now-button btn text-uppercase py-3 mr-2">Shop Now</a>
+                        <a href="{% url 'product_quote_add' %}" class="quote-now-button btn text-uppercase py-3 ml-2">Get a Quote</a>
                     </h4>
                 </div>
             </div>
         </div>
     </div>  
-    <h1 class="text-center mb-3 mt-3 p-1">Our Crafters</h1>
-    <h4 class="text-center ">Find out more about our carpenters, cabinet makers and upholsterers.</h4>
-    
+    <h1 class="text-center mb-3 mt-5 p-1">Our Crafters</h1>
+    <h4 class="text-center mb-5">Meet our carpenters, cabinet makers and upholsterers.</h4>
+    <div class="container marketing">
+        <!-- Five columns below the hero -->
+        <div class="row justify-content-center">
+          <div class="col-lg-2">
+            <img class="img-thumbnail" src="/media/pexels-ono-kosuki-5974330.png" alt="pat henry cabinet maker working with wood">
+            <h3 class="pt-3 text-muted">Pat Henry</h3>
+            <p>Pat is a cabinet maker with a special interest in finding and restoring furniture needing extensive reconstruction work.</p>
+          </div>
+          <div class="col-lg-2">
+            <img class="img-thumbnail" src="/media/pexels-cottonbro-studio-4621912.png" alt="tina hayes upholsterer working with sewing machine">
+            <h3  class="pt-3 text-muted">Tina Hayes</h3>
+            <p>Tina is a trained upholsterer who enjoys working with retro and modern pieces and bringing them back to life. </p>
+          </div>
+          <div class="col-lg-2">
+            <img class="img-thumbnail" src="/media/pexels-anna-shvets-5710847.png" alt="olaf masterson upholsterer working with furniture">
+            <h3  class="pt-3 text-muted">Olaf Masterson</h3>
+            <p>Olaf is a recent graduate of upholstery.  Olaf specialises in repairing and upholstering chairs.  He loves to create practical and durable pieces.</p>
+          </div>
+          <div class="col-lg-2">
+            <img class="img-thumbnail" src="/media/pexels-los-muertos-crew-8447848.jpg" alt="alice bohan crafter restoring antique furniture">
+            <h3  class="pt-3 text-muted">Alice Bohan</h3>
+            <p>Alice specialises in antique furniture restoration and particularly likes to work with carved furniture and pieces with inlaid mahogany.</p>
+          </div>
+          <div class="col-lg-2">
+            <img class="img-thumbnail" src="/media/pexels-anna-shvets-5711880.png" alt="peter maher carpenter repairing furniture in workshop">
+            <h3  class="pt-3 text-muted">Peter Maher</h3>
+            <p>Peter has been restoring furniture for over 20 years.  He trained as a carpenter at first but then decided to concentrate on bringing used furniture back to life.</p>
+          </div>
+        </div>
+        <h1 class="text-center mb-3 mt-5 mb-5 p-1">What Our Customers Say</h1>
+        
+        {% for r in reviews_list %}
+          {% if r.active == "Y" %}
+            <p class="mb-3 mt-3 text-center font-italic">"{{ r.comment }}"</p>
+          {% endif %}
+        {% endfor %}
+        
 {% endblock %}
 
