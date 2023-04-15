@@ -223,7 +223,7 @@ For the Access control list (ACL) section, click edit and enable List for Everyo
 - The access keys can be generated and downloaded from here
 </details>
 
-<details><summary>Connect to AWS and Copy Static Files</summary>
+<details><summary>Connect to AWS</summary>
 
 - Run the following from the command line:
 
@@ -287,5 +287,15 @@ For the Access control list (ACL) section, click edit and enable List for Everyo
 - Go to the location of the images and select the images already used on the website
 - Under "Permissions" select "Grant public-read access"
 - Click Next to the end
+</details>
+
+## Credits
+
+- Retrieve data outside of Ajax functions from [Stackoverflow](<https://stackoverflow.com/questions/65529905/use-data-outside-of-ajax-success-call>).
+- Implement a dependent dropdown list from [Simple is Better than Complex](<https://simpleisbetterthancomplex.com/tutorial/2018/01/29/how-to-implement-dependent-or-chained-dropdown-list-with-django.html>).  
+- How to edit Commits from [GitHub](<https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/changing-a-commit-message>).
+- Create a superuser for Heroku from the command line from [Stackoverflow](<https://stackoverflow.com/questions/68109989/unable-to-login-to-heroku-admin-panel-after-successfully-creating-superuser>).
+- Migrate to Heroku from the command line from [Stackoverflow](<https://stackoverflow.com/questions/48083216/django-on-heroku-programmingerror-at-relation-does-not-exist>).  
+- Referencing media files in HTML from [Stackoverflow](<https://stackoverflow.com/questions/66483647/how-do-i-reference-a-local-media-file-in-a-django-template>).
 
 
