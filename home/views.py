@@ -8,7 +8,7 @@ from django.http import HttpResponse
 
 def index(request):
     """
-    Return the index page
+    Return the index page with reviews list
     """
     reviews_list = Review.objects.all().values()
     template = loader.get_template('home/index.html')
