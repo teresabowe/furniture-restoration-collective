@@ -27,6 +27,10 @@ ul {
     color: black;
 }
 
+.btn-taupe {
+    background: #3e3327 !important;
+}
+
 .text-black {
     color: #000 !important;
 }
@@ -39,8 +43,32 @@ ul {
     background: #000 !important;
 }
 
+.bg-ebony {
+    background: #424a3b !important;
+}
+
+.bg-taupe {
+    background: #3e3327;
+}
+
+.bg-coyote {
+    background: #815d3d;
+}
+
+.bg-saffron {
+    background: #e6bd39;
+}
+
+.bg-naples {
+    background: #efcf51;
+}
+
+.bg-silver {
+    background: #aaa39b;
+}
+
 .bg-green {
-    background: rgb(121, 116, 58);
+    background: #424a3b !important;
 }
 
 .text-white {
@@ -53,7 +81,7 @@ ul {
 }
 
 .shop-now-button {
-    background: rgb(121, 116, 58);
+    background: #EFCF51;
     color: white;
     min-width: 260px;
 }
@@ -61,15 +89,15 @@ ul {
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
+.btn-green:hover,
+.btn-green:active,
+.btn-green:focus {
     background: rgb(151, 145, 74);
     color: white;
 }
 
 .quote-now-button {
-    background: rgb(94, 89, 33);
+    background: #e68739;
     color: white;
     min-width: 260px;
 }
@@ -77,9 +105,9 @@ ul {
 .quote-now-button:hover,
 .quote-now-button:active,
 .quote-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
+.btn-green:hover,
+.btn-green:active,
+.btn-green:focus {
     background: rgb(151, 145, 74);
     color: white;
 }
@@ -126,9 +154,9 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
-.btn-outline-black {
-    background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
+.btn-outline-green {
+    background: #3e3327;
+    color: white !important; /* use important to override link colors for <a> elements */
     border: 1px solid black;
 }
 
