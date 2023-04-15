@@ -1,1 +1,1 @@
-web: gunicorn furniture_restoration.wsgi
+web: gunicorn furniture_restoration.wsgi:application
