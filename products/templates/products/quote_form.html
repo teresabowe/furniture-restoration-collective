@@ -24,8 +24,11 @@
 </head>
 
 <body>
-<h1>{{product_id}}</h1>
-<h2>Quote Form</h2>
+    <div class="col text-center mt-3">
+        <hr class="w-50 mb-1">
+        <h2 class="logo-font">Quote Form</h2>
+        <hr class="w-50 mb-1">
+    </div>
     <div class="row">
         <div class="col-md-8 mt-3 mb-5 offset-md-2">
             <form method="post" id="ProductQuoteForm"
@@ -35,7 +38,7 @@
                 {% csrf_token %} 
                 {{ form|crispy }}
                                 
-                <a class="btn btn-taupe rounded-1 text-white my-2" href="javascript:getProductId();">Get Quote Detail</a>
+                <a class="btn btn-taupe rounded-1 text-white my-2 text-uppercase" href="javascript:getProductId();">Get Quote Detail</a>
             </form>
             
         </div>
