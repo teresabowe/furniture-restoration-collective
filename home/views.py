@@ -17,3 +17,6 @@ def index(request):
         }
 
     return HttpResponse(template.render(context, request))
+
+def error_404(request, exception):
+    return render(request, '404.html')
