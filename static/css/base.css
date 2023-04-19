@@ -15,6 +15,10 @@ ul {
     background-color: white;
 }
 
+.text-responsive {
+    font-size: calc(100% + 1vw + 1vh);
+}
+
 /* Mailchimp */
 
 #mc_embed_signup {
@@ -325,5 +329,10 @@ a.category-badge > span.badge:hover {
     
     .container {
         max-width: 100%;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 0rem;
     }
 }
