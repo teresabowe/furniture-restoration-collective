@@ -1,5 +1,121 @@
 
 
+### Scope
+
+The initial scope for this project is documented below in the epics and stories. Each user story has a flag indicating prioritisation and implementation status. There is also a link to each user story in GitHub.
+
+__Epics and User Stories__
+
+EPIC: Site Landing Page
+
+User Stories:
+
+- As a site visitor, I can access the landing page so that I can understand the purpose of the site and take appropriate actions (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/34" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/34/hovercard">#34</a>
+
+EPIC: User Authentication
+
+User Stories:
+
+- As a site visitor, I can register on the site so that I can access the site services and view my profile (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/1" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/1/hovercard">#1</a>
+
+- As a registered user, I can trigger an email confirmation after registration so that I understand that my account is registration is complete (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/2" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/2/hovercard">#2</a>
+
+- As a registered user, I can login and logout of my account so that access my account information (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/3" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/3/hovercard">#3</a>
+
+- As a registered user, I can view my profile so that review my purchase history (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/4" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/4/hovercard">#4</a>
+
+- As a registered user, I can reset my password so that access my account information and keep my account secure (must-have/not complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/5" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/5/hovercard">#5</a>
+
+EPIC: Manage Products
+
+User Stories:
+
+- As a shop owner, I can add products so that I can keep my store up to date with available products (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/6" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/6/hovercard">#6</a>
+
+- As a shop owner, I can view products so that I can see what is available in my store currently (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/7" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/7/hovercard">#7</a>
+
+- As a shop owner, I can update products so that I can ensure the latest product information is shared with customers (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/8" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/8/hovercard">#8</a>
+
+- As a shop owner, I can delete products so that I can ensure the product inventory is up to date (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/9" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/9/hovercard">#9</a>
+
+- As a shopper, I can view product details so that I can review the price, and description, understand the background of the product, learn about the craftsperson, and view the product image (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/11" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/11/hovercard">#11</a>
+
+- As a shopper, I can view the shopping basket total so that I can see how much I need to pay (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/13" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/13/hovercard">#13</a>
+
+
+EPIC: Product Search and Sort
+
+User Stories:
+
+- As a shopper, I can search for a product by name or description so that I can find what I need to purchase (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/14" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/14/hovercard">#14</a>
+
+- As a shopper, I can sort products by price and name so that I can find the most appropriately priced product for my needs or find by name (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/15" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/15/hovercard">#15</a>
+
+- As a shopper, I can sort a selected category of product by price and name so that I can find the most appropriately priced product for my needs or find by name for the selected category (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/16" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/16/hovercard">#16</a>
+
+EPIC: Shopping Cart
+
+User Stories:
+
+- As a shopper, I can view items in the shopping cart so that I can view total amount due and a list of items I am purchasing (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/17" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/17/hovercard">#17</a>
+
+- As a shopper, I can enter payment details so that I can checkout as quickly and securely as possible (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/18" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/187/hovercard">#18</a>
+
+- As a shopper, I can view order confirmation so that I can check that I have made the correct purchase (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/19" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/197/hovercard">#19</a>
+
+- As a shopper, I can receive an email to confirm the purchase is complete so that I can I have my own record of the transaction (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/20" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/20/hovercard">#20</a>
+
+EPIC: Quote for Custom Restore
+
+User Stories:
+
+- As a site visitor, I can get a quotation so that I can find out the cost of my restoration project (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/35" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/35/hovercard">#35</a>
+
+EPIC: Setup UI to Manage Products
+
+User Stories:
+
+- As a shop owner, I can add products in user interface so that I can easily keep my store up to date with available products (should-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/31" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/31/hovercard">#31</a>
+
+- As a shop owner, I can delete products in user interface so that I can ensure the product inventory is up to date (should-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/32" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/32/hovercard">#32</a>
+
+- As a shop owner, I can view products in User Interface so that I can review the price, and description, understand the background of the product, learn about the craftsperson, and view the product image (should-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/33" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/33/hovercard">#33</a>
+
+- As a shop owner, I can edit products in user interface so that I can easily keep my store up to date with available products (should-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/36" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/36/hovercard">#36</a>
+
+EPIC: Crafter Profiles
+
+User Stories:
+
+- As a shop owner, I can add a crafter profile so that I can record information about the crafter community (could-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/25" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/25/hovercard">#25</a>
+
+- As a shop owner, I can view a crafter profile so that I can ensure the crafter profile is up to date (could-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/26" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/26/hovercard">#26</a>
+
+- As a shop owner, I can update a crafter profile so that I can keep the crafter profile up to date (could-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/27" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/27/hovercard">#27</a>
+
+- As a shop owner, I can delete a crafter profile so that I can remove a crafter profile that is no longer relevant (could-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/28" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/28/hovercard">#28</a>
+
+EPIC: Product Testimonials
+
+User Stories:
+
+- As a shopper, I can add a product testimonial so that I can give product feedback (could-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/29" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/29/hovercard">#29</a>
+
+- As a shop owner, I can post a product testimonial so that I can share product feedback (could-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/30" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/30/hovercard">#30</a>
+
+EPIC: Blog Posts
+
+User Stories:
+
+- As a shop owner, I can add a blog post so that I can inform my users about news, products and the crafter community (could-have/ not complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/21" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/21/hovercard">#21</a>
+
+- As a shop owner, I can view a blog post so that I can ensure the contents are accurate and up to date (could-have/ not complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/22" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/22/hovercard">#22</a>
+
+- As a shop owner, I can update a blog post so that I can keep the blog up to date (could-have/ not complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/23" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/23/hovercard">#23</a>
+
+- As a shop owner, I can delete a blog post so that I can keep the blog up to date (could-have/ not complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/24" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/24/hovercard">#24</a>
+
+
 ## Deployment
 
 <details><summary>Elephant SQL</summary>
