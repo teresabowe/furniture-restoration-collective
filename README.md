@@ -2,7 +2,7 @@
 
 The Furniture Restoration Collective website is primarily a Business to Consumer (B2C) E-Commerce website. The site has two main functions.  Firstly, it allows visitors to browse and purchase furniture products restored by a group of craftspeople.  Secondly, visitors can get a quote for a restoration project they may have in mind.  If the user wishes, the quote can also be processed and an order placed for the restoration work to be done.  A registered user can add a review for the services they have received.  The site administrator can then choose whether to add the review to the main web page for others to see.  Visitors can choose to signup to the mailing list to take advantage of offers and receive the newsletter.  Site administrators can create, read, update and delete products through the user interface.  The site administrator can also delete a product from the product detail page.
 
-The live site is available for use on [Heroku](https://deskbooking.herokuapp.com/).
+The live site is available for use on [Heroku](https://furniture-restoration.herokuapp.com/).
 
 ## UX
 
@@ -189,7 +189,9 @@ Images.
 
 ## Features
 
-Features.
+__Navigation Bar__
+
+The navigation bar is present on all pages.  It remains at the top of the page at all times to allow the user to navigate easily around the site.  All visitors both registered and unregistered are presented with the navbar. 
 
 ## Deployment
 
