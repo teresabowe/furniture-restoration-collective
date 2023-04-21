@@ -1,4 +1,45 @@
+# Furniture Restoration Collective
 
+The Furniture Restoration Collective website is primarily a Business to Consumer (B2C) E-Commerce website. The site has two main functions.  Firstly, it allows visitors to browse and purchase furniture products restored by a group of craftspeople.  Secondly, visitors can get a quote for a restoration project they may have in mind.  If the user wishes, the quote can also be processed and an order placed for the restoration work to be done.  A registered user can add a review for the services they have received.  The site administrator can then choose whether to add the review to the main web page for others to see.  Visitors can choose to signup to the mailing list to take advantage of offers and receive the newsletter.  Site administrators can create, read, update and delete products through the user interface.  The site administrator can also delete a product from the product detail page.
+
+The live site is available for use on [Heroku](https://deskbooking.herokuapp.com/).
+
+## UX
+
+### Strategy
+
+__Agile__
+
+This project uses the Agile methodology presented on the GitHub platform. There are 10 epics shown as milestones and 34 user stories shown as issues in GitHub. These user stories are split into [four project iterations](https://github.com/teresabowe/furniture-restoration-collective/projects?query=is%3Aopen). The aim is to deliver a usable product at the end of each iteration.
+
+__Project Goal__
+
+The goal of the project is to create a website to allow users to purchase a piece of furniture that has been restored or to get a quote for a restoration project they may have.
+
+A typical user is someone:
+
+- who is visiting and wishes to understand the purpose of the site
+- who is visiting and wants to purchase or have a furniture piece restored
+- who is visiting and wishes to gear about offers and news
+- who is registered has previously placed an order and wants to add a review
+- who is registered has previously placed an order and wants see a list of their orders
+- who is an office manager and wants to manage products on the website
+- who is an office manager and wants to manage reviews on the website
+- who is an office manager and wants to manage crafters on the website
+- who is an office manager and wants to manage quotations on the website
+
+Key features identified are:
+
+- Landing page demonstrating the products and services on offer 
+- Site administration facility to manage products, reviews and crafters
+- User signup and authentication
+- Email signup for offers and news
+- User order management
+- A checkout facility for payments
+
+__Marketing Strategy__
+
+Marketing strategy.
 
 ### Scope
 
@@ -115,6 +156,40 @@ User Stories:
 
 - As a shop owner, I can delete a blog post so that I can keep the blog up to date (could-have/ not complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/24" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/24/hovercard">#24</a>
 
+
+### Structure
+
+Structure.
+
+### Skeleton
+
+__Wireframes__
+
+Wireframes.
+
+__Database Schema__
+
+Database schema.
+
+### Surface Design
+
+Surface design.
+
+__Colours__
+
+Colours.
+
+__Typography__
+
+Typography.
+
+__Images__
+
+Images.
+
+## Features
+
+Features.
 
 ## Deployment
 
