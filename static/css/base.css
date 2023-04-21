@@ -38,6 +38,18 @@ ul {
     width: fit-content;
 }
 
+.btn-select-taupe {
+    background: #3e3327;
+    color: #fff !important; /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
+
+.btn-select-white {
+    background: #fff;
+    color: black !important; /* use important to override link colors for <a> elements */
+    border: 1px solid lightgray;
+}
+
 .btn-link {
     color: black;
 }
@@ -169,11 +181,7 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
-.btn-outline-green {
-    background: #fff;
-    color: white !important; /* use important to override link colors for <a> elements */
-    border: 1px solid black;
-}
+
 
 
 /* ------------------------------- bootstrap toasts */
