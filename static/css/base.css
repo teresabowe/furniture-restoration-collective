@@ -170,7 +170,7 @@ a.category-badge > span.badge:hover {
 }
 
 .btn-outline-green {
-    background: #3e3327;
+    background: #fff;
     color: white !important; /* use important to override link colors for <a> elements */
     border: 1px solid black;
 }
