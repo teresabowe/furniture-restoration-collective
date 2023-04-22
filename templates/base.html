@@ -1,14 +1,15 @@
+<!DOCTYPE html>
+
 {% load static %}
 
-<!doctype html>
 <html lang="en">
 
   <head>
     {% block meta %}
+        <title>Furniture Restoration Collective | Buy Restored Furniture | Your Furniture Restored {% block extra_title %}{% endblock %}</title>
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Furniture Restoration Collective | Buy Restored Furniture | Your Furniture Restored</title>
         <meta name="description"
         content = "We sell restored furniture throughout Ireland.  We can also help with your restoration project.  
         We repair and restore chairs, tables, sofas and bedroom furniture.">
@@ -47,7 +48,6 @@
     {% block extra_js %}
     {% endblock %}
 
-    <title>Furniture Restoration Collective {% block extra_title %}{% endblock %}</title>
   </head>
   
   <body>
@@ -228,9 +228,10 @@
                                         </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                                         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3e49cb8f5abd3f1ad0b6172f4_8a84f45b80" tabindex="-1" value=""></div>
                                         <div class="optionalParent">
-                                            <div class="clear foot">
-                                            <input class="btn bg-saffron text-uppercase border-0 text-black font-weight-bold ml-0 mr-1 mt-0" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
-                                            <p class="brandingLogo"><a href="http://eepurl.com/ipgVi2" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+                                                <div class="clear foot">
+                                                <input class="btn bg-saffron text-uppercase border-0 text-black font-weight-bold ml-0 mr-1 mt-0" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
+                                                <p class="brandingLogo"><a href="http://eepurl.com/ipgVi2" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -242,12 +243,9 @@
                 
             </section>
             
-            <section class="mb-4 mt-4 text-center">
-                
-                <p class="font-italic text-white">We are members of the <a href="https://www.dcci.ie/" target="_blank" rel="external">Design and Craft Council of Ireland.</a></p>
-           
-
-            </section>
+            <div>
+                <p class="mb-4 mt-4 text-center font-italic text-white">We are members of the <a href="https://www.dcci.ie/" target="_blank" rel="external">Design and Craft Council of Ireland.</a></p>
+            </div>
           <!-- Section: Form -->
         </div>
         <!-- Copyright -->
@@ -259,11 +257,11 @@
       </footer>
 
     {% block postloadjs %}
-        <script type="text/javascript">
+        <script>
             $('.toast').toast('show');
         </script>
-        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-        <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+        <script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+        <script>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
                 
     {% endblock %}
     

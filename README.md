@@ -351,8 +351,135 @@ The shopping bag detail shows the list of products with product name, image, pri
 
 __Checkout__
 
+At the checkout, the user is presented with a summary of the order and a form containing any current known information about the customer.  If the user has an account and is logged in, they will be presented with their account information.  There will be a checkbox that can be unchecked if they do not want any changed information saved to their profile.  If the user does not have an account they will be redirected to the login page where they also have the option to register on the site. 
 
+![Checkout](/documentation/screenshots/checkout-personal-details.png)
 
+---
+
+The user then enters their card details at checkout and can complete the order.   
+
+![Checkout](/documentation/screenshots/checkout-card-details.png)
+
+---
+
+Once the payment has been processed, the success page shows the transaction details. 
+
+![Success](/documentation/screenshots/checkout-success.png)
+
+---
+
+An email with a summary of the order is also sent to the customer.
+
+![Success](/documentation/screenshots/order-confirmation-email.png)
+
+---
+
+### Future Features
+
+The following features will be delivered in future iterations of the project.
+
+- Improved profile user interface including a password reset feature.
+
+- A blog showcasing the work of the crafters and delivering video content of the restoration process.
+
+## Technologies Used
+
+### Languages
+
+- [Python](https://www.python.org/) 3.2 was used to develop the application backend.  The following are the Python modules and packages used in the project:
+
+- asgiref==3.6.0
+- boto3==1.26.105
+- botocore==1.29.105
+- dj-database-url==0.5.0
+- Django==3.2
+- django-allauth==0.41.0
+- django-countries==7.2.1
+- django-crispy-forms==1.14.0
+- django-storages==1.13.2
+- gunicorn==20.1.0
+- jmespath==1.0.1
+- oauthlib==3.2.2
+- Pillow==9.4.0
+- psycopg2==2.9.5
+- python3-openid==3.2.0
+- pytz==2022.7.1
+- requests-oauthlib==1.3.1
+- s3transfer==0.6.0
+- sqlparse==0.4.3
+- stripe==5.3.0
+
+- [HTML5](https://html.spec.whatwg.org/multipage/) for front-end development.
+
+- [CSS](https://www.w3.org/Style/CSS/) to style the HTML pages
+
+- [JavaScript](https://www.javascript.com//) no was used to create custom dropdown menus in forms
+
+### Frameworks
+
+- [Django](https://docs.djangoproject.com/en/3.2/) v3.2.16
+- [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/) v4.6.2
+
+### Database
+
+- [SQLite](https://www.sqlite.org/index.html) for automated testing locally
+- [PostgreSQL](https://www.postgresql.org/) from [ElephantSQL](https://www.elephantsql.com/) for live database
+
+### Other
+
+- [Heroku](https://www.heroku.com/) was used to host the deployed site
+- [AWS](https://aws.amazon.com/) is hosting the static and media files
+- [Gitpod](https://www.gitpod.io/) VS Code Browser as the IDE/Editor
+- [Git](https://git-scm.com/) was used for version control 
+- [GitHub](https://github.com/) is the repository for the code
+- [W3C Markup Validation Service](https://validator.w3.org/)
+- [W3C CSS Validation Service(Jigsaw)](https://jigsaw.w3.org/css-validator/)
+- [PEP8](https://www.python.org/dev/peps/pep-0008/) is the standard used to validate Python
+- [CI Python Linter](https://pep8ci.herokuapp.com/) tool was used to validate the Python code
+- [Coolors](https://coolors.co/) generate the colour palette used on the site
+- [Balsamiq](https://balsamiq.com/) for developing the wireframes
+
+## Testing
+
+### Manual Testing
+<details><summary>User Story Testing</summary>
+
+</details>
+
+<details><summary>Features Testing</summary>
+
+</details>
+
+### Validator Testing
+
+<details><summary>HTML Testing</summary>
+
+Nu Html Checker.
+
+</details>
+
+<details><summary>CSS Testing</summary>
+
+W3C CSS Validator.
+
+</details>
+
+</details>
+
+<details><summary>Python Testing</summary>
+
+The PEP8 standards for Python were checked using CI Python Linter.
+
+</details>
+
+<details><summary>Lighthouse Testing</summary>
+
+- Home Page
+
+</details>
+
+### Bugs and Fixes
 
 ## Deployment
 
