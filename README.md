@@ -195,6 +195,30 @@ __Navigation Bar__
 
 The navigation bar is present on all pages.  It remains at the top of the page at all times to allow the user to navigate easily around the site.  All visitors both registered and unregistered are presented with the navbar. 
 
+![Navigation Bar](/documentation/screenshots/desktop-navbar.png)
+
+__Footer__
+
+
+__Hero Image__
+
+__User Authentication__
+
+__Products__
+
+and product detail
+
+__Quotes__
+
+and quote detail
+
+__Bag__
+
+
+__Checkout__
+
+and email confirmation, show email message
+
 ## Deployment
 
 <details><summary>Elephant SQL</summary>
