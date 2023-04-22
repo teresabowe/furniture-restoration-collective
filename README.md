@@ -309,24 +309,50 @@ The review form allows the user to enter free text and then select a crafter fro
 
 Once the user has finished using the site they can select the Logout option from the Account menu.
 
-![Review](/documentation/screenshots/signout-confirmation.png)
+![Logout](/documentation/screenshots/signout-confirmation.png)
 
 ---
 
 __Products__
 
-and product detail
+When the user clicks on the shop online now button or selects products from the navbar dropdown menus, they are brought to the products page.  Here each product has a product image, name, price, the category it belongs to and the crafter name.  Both the category can be selected to show the products in that category.  Likewise, the crafter can be selected and the products they have restored will be shown.  The user can then click on the product image to view the product detail.
 
-__Quotes__
+![Review](/documentation/screenshots/products.png)
 
-and quote detail
+---
+
+The product detail shows a detailed description of the product, a quantity selection option, and additional information about the crafter.  From here the user can choose to add the product to their bag, keep shopping, or use the navbar or footer options.
+
+![Review](/documentation/screenshots/product-detail.png)
+
+---
+
+__Restoration Quotation__
+
+When the user clicks on the get a quote button they are brought to the quotation page.  Here the user can select the category and subcategory based on the furniture restoration project they have in mind.  They will then receive a quotation for the project and have the option get the quote detail.
+
+![Quotation](/documentation/screenshots/quotation.png)
+
+---
+
+The qotation detail shows further information about the quotation in terms of assumptions, transport details, and timing.  Should the user wish to proceed with the restoration work, they can add the service to their bag.
+
+![Quotation Detail](/documentation/screenshots/quotation-detail.png)
+
+---
 
 __Bag__
 
+The shopping bag detail shows the list of products with product name, image, price, and subtotal (in case there are multiple items selected).  Also, there is a bag total, any delivery charges, and a grand total.  The user at this point can decide to progress to the checkout or continue shipping.
+
+![Shopping Bag](/documentation/screenshots/bag-detail.png)
+
+---
 
 __Checkout__
 
-and email confirmation, show email message
+
+
 
 ## Deployment
 
