@@ -15,6 +15,7 @@ from django.contrib.auth.decorators import login_required
 
 import stripe
 
+
 @login_required
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY

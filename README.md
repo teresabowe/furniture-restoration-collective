@@ -161,13 +161,45 @@ User Stories:
 
 ### Structure
 
-Structure.
+The website has 12 key user pages currently. The following pages are open to both registered and non-registered users:
+
+- Home
+- Product
+- Quotation
+- Product / Quotation Detail
+- Bag
+
+The following pages are open to registered users only:
+
+- Checkout
+- Checkout Success
+- User Profile
+
+The following user authentication pages are also currently available:
+
+- User Registration
+- Sign In
+- Sign Out
+- Email Verification
+
 
 ### Skeleton
 
-__Wireframes__
+_Desktop Home Page_
 
-Wireframes.
+![Wireframe](/documentation/screenshots/desktop-wireframe-home.png)
+
+_Desktop Product Page_
+
+![Wireframe](/documentation/screenshots/desktop-wireframe-product.png)
+
+_Desktop Blog Page_
+
+![Wireframe](/documentation/screenshots/desktop-wireframe-blog.png)
+
+_Mobile Product Page_
+
+![Wireframe](/documentation/screenshots/mobile-wireframe-all.png)
 
 __Database Schema__
 
