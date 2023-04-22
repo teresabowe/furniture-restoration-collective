@@ -197,37 +197,55 @@ The navigation bar is present on all pages.  It remains at the top of the page a
 
 ![Navigation Bar](/documentation/screenshots/desktop-navbar.png)
 
+---
+
 Along with being a marketing tool, the company name or logo serves as a home page link.
 
 ![Navigation Bar](/documentation/screenshots/company-logo.png)
+
+---
 
 On mobile and mediaum screens the home link is present in the dropdown menu.
 
 ![Navigation Bar](/documentation/screenshots/home-link-mobile.png)
 
+---
+
 The user can search the site for a specific product using the search feature on the navbar.
 
 ![Navigation Bar](/documentation/screenshots/search.png)
+
+---
 
 The products can be sorted by price (high to low or low to high), or by Name, Source, Crafter, or Source (A-Z or Z-A).
 
 ![Navigation Bar](/documentation/screenshots/product-sort.png)
 
+---
+
 The Account dropdown offers the unregistered user an opportunity to register or log in.  
 
 ![Navigation Bar](/documentation/screenshots/account-menu-not-registered.png)
+
+---
 
 The registered user can review their profile or logout.  The site administrator can also open the product management menu so that products can be viewed, added, updated or deleted.
 
 ![Navigation Bar](/documentation/screenshots/account-menu-registered.png)
 
+---
+
 The user has an opportunity to select the All Products menu and choose products sorted by price (low to high), category (A-Z), crafter (A-Z), or Source (A-Z), or they can simply browse all products.  The products can also be selected from the category menus present on the navbar.
 
 ![Navigation Bar](/documentation/screenshots/product-dropdown-menus.png)
 
+---
+
 The delivery banner is currently being used to communicate a free delivery message. 
 
 ![Navigation Bar](/documentation/screenshots/free-delivery.png)
+
+---
 
 __Footer__
 
@@ -235,20 +253,27 @@ The footer offers the user an opportunity to communicate with the organisation. 
 
 ![Footer](/documentation/screenshots/footer.png)
 
+---
+
 __Home Page__
 
 The hero image on the home page shows a restored piece of furniture overlayed with information about the products and restoration services offered.  There are also two call-to-action buttons, one to purchase products online and the second to generate a quote to have a furniture piece restored.  The call-to-action buttons are shown in bright colours to attract attention and to encourage users to click through to their chosen product or service.
 
 ![Hero Image](/documentation/screenshots/hero-image.png)
 
+---
+
 The crafters involved in the Furniture Restoration Collective are key to its success and therefore it is important to give the visitor an insight into who they are and what their specialities are.  Their images are shown on the home page alng with a brief summary of their backgrounds.  Where possible any relevant SEO keywords have been included to improve web ranking.
 
 ![Crafters](/documentation/screenshots/crafters.png)
+
+---
 
 The home page also shows reviews that have been added by customers.  The site administrator has the ability to activate or deactivate a customer review.
 
 ![Reviews](/documentation/screenshots/customer-reviews.png)
 
+---
 
 __User Authentication__
 
@@ -256,25 +281,37 @@ A visitor wishing to register can signup by selecting the Register button from t
 
 ![Signup](/documentation/screenshots/signup-form.png)
 
+---
+
 The password entered must meet minimum security criteria.
 
 ![Signup](/documentation/screenshots/signup-form-password.png)
+
+---
 
 An account verification email message will be sent to the new user to complete the registration.
 
 ![Signup](/documentation/screenshots/account-verification-email.png)
 
+---
+
 The user profile view allows the user to add a review, add or update their delivery information, or view their orders to date.
 
 ![Signup](/documentation/screenshots/user-profile.png)
+
+---
 
 The review form allows the user to enter free text and then select a crafter from the list.
 
 ![Review](/documentation/screenshots/product-review.png)
 
+---
+
 Once the user has finished using the site they can select the Logout option from the Account menu.
 
 ![Review](/documentation/screenshots/signout-confirmation.png)
+
+---
 
 __Products__
 
