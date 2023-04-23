@@ -83,7 +83,7 @@ QUOTE = (
 
 
 class Product(models.Model):
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL, limit_choices_to=Q(name="chairs") | Q(name="sofas"))
+    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     subcategory = models.ForeignKey('Subcategory', null=True, blank=True, on_delete=models.SET_NULL)
     quote = models.CharField(max_length=3, choices=QUOTE, default='N')
     sku = models.CharField(max_length=254, null=True, blank=True)
