@@ -207,19 +207,29 @@ Database schema.
 
 ### Surface Design
 
-Surface design.
+The design aims to deliver a website that demonstrates a clear understanding of its purpose.  The overall aesthetic is clean and simple and intends to communicate a professional and friendly organisation.  The Boutique Ado tutorial was used as the starting point for developing the templates for the project.
 
 __Colours__
 
-Colours.
+The website colours were chosen from a furniture image and then applied to the home page and accross the website.
+
+![Furniture Image for Coolors](/documentation/screenshots/kam-idris-_HqHX3LBN18-unsplash.jpg)
+
+![Coolors Palette](/documentation/screenshots/coolors.png)
 
 __Typography__
 
-Typography.
+The font family applied for the hero image overlay text is:
+
+font-family: 'Poppins', sans-serif;
+
+The font family applied for the site is:
+
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 
 __Images__
 
-Images.
+The furniture images chosen for the website aim to show that there is a highly skilled professional organisation producing quality restored furniture.
 
 ## Features
 
@@ -810,5 +820,29 @@ For the Access control list (ACL) section, click edit and enable List for Everyo
 - Create a superuser for Heroku from the command line from [Stackoverflow](<https://stackoverflow.com/questions/68109989/unable-to-login-to-heroku-admin-panel-after-successfully-creating-superuser>).
 - Migrate to Heroku from the command line from [Stackoverflow](<https://stackoverflow.com/questions/48083216/django-on-heroku-programmingerror-at-relation-does-not-exist>).  
 - Referencing media files in HTML from [Stackoverflow](<https://stackoverflow.com/questions/66483647/how-do-i-reference-a-local-media-file-in-a-django-template>).
+
+### Media
+
+__Images__
+
+- [Yellow Upholstered Fireside Chair](https://unsplash.com/photos/_HqHX3LBN18?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) created by Kam Idris - Unsplash.
+- [Set of Four Wooden Bar Stools with Black](https://unsplash.com/photos/xa3zvVw10z8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) created by Kevs - Unsplash.
+- [Armchair with Retro Vibes in Peach Velvet](https://unsplash.com/photos/TKFskJy8PQ8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) created by Spacejoy - Unsplash.
+- [Round Marble Table with Metal Upholstered Chairs](https://unsplash.com/photos/rhcllVy2zBU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) created by Tabitha Turner - Unsplash.
+- [Mahogany Table and Chairs](https://unsplash.com/photos/9v7UJS92HYc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) created by Ryan Riggins - Unsplash.
+- [Writing Desk in Walnut](https://www.pexels.com/photo/bedroom-interior-with-bed-and-classic-furniture-7061071/) created by Max Rahubovskiy - Pexels.
+- [Windsor Style Side Chair in Dark Wood](https://unsplash.com/photos/mAIVaG4mHj8) created by Rumman Amin - Unsplash.
+- [Brown Leather Armchairs](<https://unsplash.com/photos/_1dsChCQ_7w?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText>) created by Jan Canty - Unsplash.
+- [Quotation Product Detail](https://www.pexels.com/photo/a-woman-doing-woodwork-8447848/) created by Los Muertos Crew - Pexels.
+- [Olaf Masterson](https://www.pexels.com/photo/skilled-artisan-cutting-wood-at-table-saw-5710847/) created by Anna Shvets - Pexels.
+- [Tina Hayes](https://www.pexels.com/photo/woman-in-black-sweater-sitting-at-table-4621912/) created by cottonbro studio - Pexels.
+- [Pat Henry](https://www.pexels.com/photo/focused-craftsman-smoothing-wooden-detail-with-sander-5974330/) created by Ono Kosuki - Pexels.
+- [Peter Maher](https://www.pexels.com/photo/woodworker-with-hammer-working-with-wood-5711880/>) created by Anna Shvets - Pexels.
+- [Alice Bohan](https://www.pexels.com/photo/handywoman-grinding-a-wood-plank-8447849/) created by Los Muertos Crew - Pexels.
+
+__Icons__
+- [User](https://fontawesome.com/v5/icons/user?f=classic&s=solid) created by Font Awesome.
+- [Basket](https://fontawesome.com/v6/icons/cart-shopping?f=classic&s=solid) created by Font Awesome.
+
 
 
