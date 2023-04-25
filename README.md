@@ -579,39 +579,175 @@ To prepare for testing, complete the following steps:
 3. Select Products under the Products app
 4. A list of products will be shown
 
-As a shop owner, I can add products so that I can keep my store up to date with available products (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/6" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/6/hovercard">#6</a>
-
 As a shop owner, I can view products so that I can see what is available in my store currently (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/7" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/7/hovercard">#7</a>
 
 Testing procedure:
 1. Click on the SKU from the product list
 
+Expected Result: The product details are shown.
 
-Expected Result: Any previous purchases are listed in the order history
+Actual Result: The category dropdown does not show all categories.  Only sofas and chairs are shown.
 
-Actual Result: Any previous purchases are listed in the order history
+Pass/Fail: Fail
+
+Action: Removed the limit choices parameter from the category field in the products table.  This was initially set when configuring the dropdown menus for the quotation form.  See commit number [9b7bf5c](https://github.com/teresabowe/furniture-restoration-collective/commit/9b7bf5cbd7576dd8dc0608f9a51480ab2adb0945).
+
+Pass/Fail: Pass
+
+---
+
+As a shop owner, I can add products so that I can keep my store up to date with available products (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/6" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/6/hovercard">#6</a>
+
+
+1. With the product list open, click on the add product button in the top right corner
+2. Add the data to the fields
+3. Click on the save button
+
+![Admin UI Add a Product](/documentation/screenshots/admin-ui-add-a-product.png)
+
+
+Expected Result: The product is added to the product list.
+
+Actual Result: The product is added to the product list.
+
+Pass/Fail: Pass
+
+---
 
 As a shop owner, I can update products so that I can ensure the latest product information is shared with customers (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/8" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/8/hovercard">#8</a>
 
+1. With the product list open, click on the SKU button
+2. Update te required fields
+3. Click on the save button
+
+Expected Result: The product is updated.
+
+Actual Result: The product is updated.
+
+Pass/Fail: Pass
+
+---
+
 As a shop owner, I can delete products so that I can ensure the product inventory is up to date (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/9" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/9/hovercard">#9</a>
 
+1. With the product list open, click on the SKU button
+2. Click on the delete button
+3. Click Yes, I'm sure
 
+Expected Result: The product is deleted.
 
+Actual Result: The product is deleted.
+
+Pass/Fail: Pass
+
+---
 
 As a shopper, I can view product details so that I can review the price, and description, understand the background of the product, learn about the craftsperson, and view the product image (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/11" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/11/hovercard">#11</a>
 
+Shop Online Now - Product Detail
+
+1. Click on the Shop Online Now button from the landing page
+2. Choose a product by clicking on an image
+3. The product detail page will show the name, price, category, who the crafter was, description, quantity selector, an option to add the product to the bag or continue shopping, and finally more information about the crafter is at the bottom of this page.
+
+![Product Detail Page Testing](/documentation/screenshots/product-detail-testing.png)
+
+Expected Result: The product detail is shown.
+
+Actual Result: The product detail is shown.
+
+Pass/Fail: Pass
+
+Get a Quote - Product Detail
+
+1. Click on the Get a Quote button from the landing page
+2. Complete the Quotation Form
+3. The detail page will show the name, price, category, quote description, quantity selector, an option to add the quote to the bag or continue shopping, and finally more information about the restoration process at the bottom of this page.
+
+Expected Result: The quote detail is shown.
+
+Actual Result: The quote detail is shown.
+
+Pass/Fail: Pass
+
+---
+
 As a shopper, I can view the shopping basket total so that I can see how much I need to pay (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/13" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/13/hovercard">#13</a>
 
+1. Add a product or quote to the shopping basket or bag
+2. Click on the shopping basket on the top right of the navbar
+3. The shopping basket will show the total for each item and also the grand total for all items in the basket
+
+Expected Result: The basket grand total is shown.
+
+Actual Result: The basket grand total is shown.
+
+Pass/Fail: Pass
+
+---
 
 EPIC: Product Search and Sort
 
 User Stories:
 
-- As a shopper, I can search for a product by name or description so that I can find what I need to purchase (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/14" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/14/hovercard">#14</a>
+As a shopper, I can search for a product by name or description so that I can find what I need to purchase (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/14" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/14/hovercard">#14</a>
 
-- As a shopper, I can sort products by price and name so that I can find the most appropriately priced product for my needs or find by name (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/15" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/15/hovercard">#15</a>
+1. Got to web address https://furniture-restoration.herokuapp.com/
+2. Enter a search term e.g. dining 
+
+![Product Search Testing](/documentation/screenshots/search-box.png)
+
+3. The products with the search term included in either their name or description will be shown.
+
+Expected Result: The products with the search term included in either their name or description will be shown.
+
+Actual Result: The products with the search term included in either their name or description are shown.
+
+Pass/Fail: Pass
+
+---
+
+As a shopper, I can sort products by price and name so that I can find the most appropriately priced product for my needs or find by name (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/15" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/15/hovercard">#15</a>
+
+1. Got to web address https://furniture-restoration.herokuapp.com/
+2. Select All Products from the navbar
+3. Select All Products from the dropdown menu
+4. Click on the sort dropdown menu on the top right corner of the products page
+
+![Product Sort Testing](/documentation/screenshots/product-sort-testing.png)
+
+5. Select sort by price low to high
+6. Check the sort order of the products with the lowest price showing as the first product
+7. Select the sort by name A-Z
+8. Check the sort order of the products with the product name closest to A showing as the first product
+
+Expected Result: The products can be sorted by price and name.
+
+Actual Result: The products can be sorted by price and name.
+
+Pass/Fail: Pass
+
+---
 
 - As a shopper, I can sort a selected category of product by price and name so that I can find the most appropriately priced product for my needs or find by name for the selected category (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/16" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/16/hovercard">#16</a>
+
+1. Got to web address https://furniture-restoration.herokuapp.com/
+2. Select Dining from the navbar
+3. Select Chairs from the dropdown menu
+4. Click on the sort dropdown menu on the top right corner of the products page
+5. Select sort by price low to high
+6. Check the sort order of the products with the lowest price showing as the first product
+7. Select the sort by name A-Z
+8. Check the sort order of the products with the product name closest to A showing as the first product
+
+Expected Result: The selected category products can be sorted by price and name.
+
+Actual Result: The selected category products can be sorted by price and name.
+
+Pass/Fail: Pass
+
+---
+
 
 EPIC: Shopping Cart
 
