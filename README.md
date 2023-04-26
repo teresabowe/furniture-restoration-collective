@@ -413,8 +413,6 @@ Once the payment has been processed, the success page shows the transaction deta
 
 An email with a summary of the order is also sent to the customer.
 
-![Success](/documentation/screenshots/order-confirmation-email.png)
-
 ---
 
 ### Future Features
@@ -729,7 +727,7 @@ Pass/Fail: Pass
 
 ---
 
-- As a shopper, I can sort a selected category of product by price and name so that I can find the most appropriately priced product for my needs or find by name for the selected category (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/16" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/16/hovercard">#16</a>
+As a shopper, I can sort a selected category of product by price and name so that I can find the most appropriately priced product for my needs or find by name for the selected category (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/16" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/16/hovercard">#16</a>
 
 1. Got to web address https://furniture-restoration.herokuapp.com/
 2. Select Dining from the navbar
@@ -753,19 +751,84 @@ EPIC: Shopping Cart
 
 User Stories:
 
-- As a shopper, I can view items in the shopping cart so that I can view total amount due and a list of items I am purchasing (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/17" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/17/hovercard">#17</a>
+As a shopper, I can view items in the shopping cart so that I can view total amount due and a list of items I am purchasing (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/17" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/17/hovercard">#17</a>
 
-- As a shopper, I can enter payment details so that I can checkout as quickly and securely as possible (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/18" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/187/hovercard">#18</a>
+1. From the product detail pages, add two products to the shopping cart
+2. Click on the shopping cart in the top right corner of the navbar
+
+![Shopping Bag Grand Total](/documentation/screenshots/shopping-bag-grandtotal.png)
+
+Expected Result: The total amount due and the list of items is shown.
+
+Actual Result: The total amount due and the list of items is shown.
+
+Pass/Fail: Pass
+
+---
+
+As a shopper, I can enter payment details so that I can checkout as quickly and securely as possible (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/18" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/187/hovercard">#18</a>
+
+1. Click on secure checkout on the shopping cart menu
+2. Complete the fields on the form and then enter the credit card details
+3. Click on Complete Order
+
+![Shopping Bag Grand Total](/documentation/screenshots/checkout-secure-payment.png)
+
+Expected Result: The user can checkout as quickly and securely as possible.
+
+Actual Result: The user can checkout as quickly and securely as possible.
+
+Pass/Fail: Pass
+
+---
 
 - As a shopper, I can view order confirmation so that I can check that I have made the correct purchase (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/19" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/197/hovercard">#19</a>
 
-- As a shopper, I can receive an email to confirm the purchase is complete so that I can I have my own record of the transaction (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/20" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/20/hovercard">#20</a>
+
+1.  Once the Complete Order is pressed, the order cofirmation is shown
+
+Expected Result: The correct purchase was made.
+
+Actual Result: The correct purchase was made.
+
+Pass/Fail: Pass
+
+---
+
+As a shopper, I can receive an email to confirm the purchase is complete so that I can I have my own record of the transaction (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/20" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/20/hovercard">#20</a>
+
+1.  Once the Order Confirmation is shown the user will receive an email confirming the order number
+
+![Success](/documentation/screenshots/order-confirmation-email.png)
+
+Expected Result: The user receives an email confirming that purchase was made.
+
+Actual Result: The user receives an email confirming that purchase was made.
+
+Pass/Fail: Pass
+
+---
+
 
 EPIC: Quote for Custom Restore
 
 User Stories:
 
 - As a site visitor, I can get a quotation so that I can find out the cost of my restoration project (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/35" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/35/hovercard">#35</a>
+
+1. Click on the Get a Quote button from the landing page
+2. Complete the Quotation Form using the dropdown menus
+3. Click on Get Quote Detail
+
+Expected Result: The quotation form is completed and the quote detail is shown.
+
+Actual Result: The quotation form is completed and the quote detail is shown.
+
+Pass/Fail: Pass
+
+Note: When designing the form at the outset, the remove limit choices for the category field in the product model was set so that the choices of only sofas and chairs would be available on the form.  While this worked for the quotation form, adding products on the product admin and the product management UI was an issue as not all categories were available.  The limit choices parameter was removed and now at the time of writing, all categories are showing in the quotation field.
+
+---
 
 EPIC: Setup UI to Manage Products
 
