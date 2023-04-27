@@ -1,7 +1,7 @@
 <ul>
     <li class="list-inline-item text-white">
         <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <div class="text-center mr-1">
+            <div class="text-center">
                 <div><i class="fas fa-search fa-lg"></i></div>
                 <p class="my-0">Search</p>
             </div>
@@ -25,7 +25,7 @@
         <a class="text-black nav-link d-block d-lg-none" href="#" aria-labelledby="user-account-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <div class="text-center">
                 <div><i class="fas fa-user fa-lg"></i></div>
-                <p class="my-0 mr-1">Account</p>
+                <p class="my-0">Account</p>
             </div>
         </a>
         <div class="dropdown-menu border-0" id="user-account-options">
@@ -45,7 +45,7 @@
         <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}">
             <div class="text-center">
                 <div><i class="fa-solid fa-cart-shopping fa-lg"></i></div>
-                <p class="my-0 mr-1">&#8364;
+                <p class="my-0">&#8364;
                     {% if grand_total %}
                         {{ grand_total|floatformat:2 }}
                     {% else %}
