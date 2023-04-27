@@ -12,35 +12,29 @@
 {% endblock %}
 
 {% block content %}
-<!doctype html>
-<html lang="en">
-<div class="overlay"></div>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Product Custom Quote</title>
-</head>
 
-<body>
-    <div class="col text-center mt-3">
-        <hr class="w-50 mb-1">
-        <h2 class="logo-font">Quote Form</h2>
-        <hr class="w-50 mb-1">
-    </div>
-    <div class="row">
-        <div class="col-md-8 mt-3 mb-5 offset-md-2">
-            <form method="post" id="ProductQuoteForm"
-                data-subcategories-url="{% url 'ajax_load_subcategories' %}"
-                data-price-url="{% url 'ajax_load_price' %}">
-                   
-                {% csrf_token %} 
-                {{ form|crispy }}
-                                
-                <a class="btn btn-select-taupe rounded-1 my-2 text-uppercase" href="javascript:getProductId();">Get Quote Detail</a>
-            </form>
-            
+<div class="overlay"></div>
+    <div class="container-fluid">
+        <title>Product Custom Quote</title>
+
+        <div class="col text-center mt-3">
+            <hr class="w-50 mb-1">
+            <h2 class="logo-font">Quote Form</h2>
+            <hr class="w-50 mb-1">
+        </div>
+        <div class="row">
+            <div class="col-md-8 mt-3 mb-5 offset-md-2">
+                <form method="post" id="ProductQuoteForm"
+                    data-subcategories-url="{% url 'ajax_load_subcategories' %}"
+                    data-price-url="{% url 'ajax_load_price' %}">
+                    
+                    {% csrf_token %} 
+                    {{ form|crispy }}
+                                    
+                    <a class="btn btn-select-taupe rounded-1 my-2 text-uppercase" href="javascript:getProductId();">Get Quote Detail</a>
+                </form>
+                
+            </div>
         </div>
     </div>
 {% endblock %}
@@ -49,7 +43,6 @@
 {{ block.super }}
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript"></script>
 <script>
 
     $("#id_category").change(function () {
