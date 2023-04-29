@@ -875,21 +875,54 @@ User Stories:
 
 <details><summary>HTML Testing</summary>
 
-Nu Html Checker.
+The URLs below were copied to the Nu Html Checker.  A the time of writing this readme file, there were no errors showing.
+
+- https://furniture-restoration.herokuapp.com/
+- https://furniture-restoration.herokuapp.com/products/
+- https://furniture-restoration.herokuapp.com/products/1/
+- https://furniture-restoration.herokuapp.com/bag/
+- https://furniture-restoration.herokuapp.com/checkout/
+- https://furniture-restoration.herokuapp.com/checkout/checkout_success/50D7F6463E754B898EA73A63FF59D779
+- https://furniture-restoration.herokuapp.com/products/quote/
+- https://furniture-restoration.herokuapp.com/products/list/
+- https://furniture-restoration.herokuapp.com/products/view/1/
+- https://furniture-restoration.herokuapp.com/products/edit/1/
+- https://furniture-restoration.herokuapp.com/products/add/
+- https://furniture-restoration.herokuapp.com/accounts/logout/
+- https://furniture-restoration.herokuapp.com/accounts/signup/
+- https://furniture-restoration.herokuapp.com/accounts/logout/
+- https://furniture-restoration.herokuapp.com/accounts/confirm-email/
+- https://furniture-restoration.herokuapp.com/accounts/confirm-email/MTI:1pst2s:RYM3vImn43D1SeCCptWkZ1NutTWYk4kKrcTbdtDoXcU/
+- https://furniture-restoration.herokuapp.com/accounts/login/
+- https://furniture-restoration.herokuapp.com/profile/
+- https://furniture-restoration.herokuapp.com/products/review/
+
+The main issue found with the HTML checker was with the navbar.  The error is shown below.  The solution was to add a ul element in the mobile-top-header.html.
+
+![Navbar Error](/documentation/screenshots/html-code-validation-error.png)
+
+![Navbar Clear of Error](/documentation/screenshots/html-code-validation-clear.png)
+
 
 </details>
 
 <details><summary>CSS Testing</summary>
 
-W3C CSS Validator.
+The W3C CSS validator currently shows no errors.
 
-</details>
+![CSS Clear of Error](/documentation/screenshots/css-code-validation-clear.png)
 
 </details>
 
 <details><summary>Python Testing</summary>
 
 The PEP8 standards for Python were checked using CI Python Linter.
+
+__Bag App__
+
+bag_tools.py
+admin.py
+
 
 </details>
 
