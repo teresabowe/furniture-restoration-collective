@@ -77,7 +77,7 @@
                     <li class="list-inline-item dropdown">
                         <a class="text-black nav-link" href="#" aria-labelledby="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
-                                <div><i class="fas fa-user fa-lg"></i></div>
+                                <div><i class="fas fa-user fa-lg fa-sm"></i></div>
                                 <p class="my-0">Account</p>
                             </div>
                         </a>
@@ -97,7 +97,7 @@
                     <li class="list-inline-item">
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
                             <div class="text-center">
-                                <div><i class="fa-solid fa-cart-shopping fa-lg"></i></div>
+                                <div><i class="fa-solid fa-cart-shopping fa-lg fs-sm"></i></div>
                                 <p class="my-0">&#8364;
                                     {% if grand_total %}
                                         {{ grand_total|floatformat:2 }}
