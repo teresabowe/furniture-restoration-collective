@@ -910,6 +910,10 @@ The main issue found with the HTML checker was with the navbar.  The error is sh
 
 The W3C CSS validator currently shows no errors.
 
+- base.css
+- checkout.css
+- profile.css
+
 ![CSS Clear of Error](/documentation/screenshots/css-code-validation-clear.png)
 
 </details>
@@ -920,9 +924,87 @@ The PEP8 standards for Python were checked using CI Python Linter.
 
 __Bag App__
 
-bag_tools.py
-admin.py
+- bag_tools.py
+- admin.py
+- apps.py
+- contexts.py
+- tests.py
+- models.py
+- urls.py
+- views.py
 
+All of the above tests show no errors.
+
+__Checkout App__
+
+- admin.py
+- apps.py
+- forms.py
+- models.py
+- signals.py
+- test.py
+- urls.py
+- views.py
+
+All of the above tests show no errors with the exception of models.py.  Adjusting the Line too long on lines 46 and 48 had an adverse effect on checkout functionality during testing.
+
+The error after completing the order showed:
+
+    TypeError at /checkout/
+    '<' not supported between instances of 'method' and 'int'
+
+These lines still show a line too long error in this release of the application.
+
+__Furniture Restoration__
+
+- asgi.py
+- settings.py
+- urls.py
+- wsgi.py
+
+All of the above tests show no errors except for settings.py.  These errors were related to the password validators.
+
+![Settings.py Validation](/documentation/screenshots/python-code-validation-settings.png)
+
+__Home App__
+
+- admin.py
+- apps.py
+- models.py
+- tests.py
+- urls.py
+- views.py
+
+All of the above tests show no errors.
+
+__Products App__
+
+- admin.py
+- apps.py
+- forms.py
+- models.py
+- tests.py
+- urls.py
+- views.py
+- widgets.py
+
+All of the above tests show no errors.
+
+__Profiles App__
+
+- admin.py
+- apps.py
+- forms.py
+- models.py
+- tests.py
+- urls.py
+- views.py
+
+__Root Furniture Restoration Collective__
+
+custom_storages.py
+env.py
+manage.py
 
 </details>
 
@@ -931,6 +1013,10 @@ admin.py
 - Home Page
 
 </details>
+
+<details><summary>Javascript Testing</summary>
+
+Javascript was tested using JS Hint.
 
 ### Bugs and Fixes
 
