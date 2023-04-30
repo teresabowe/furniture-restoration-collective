@@ -933,7 +933,7 @@ __Bag App__
 - urls.py
 - views.py
 
-All of the above tests show no errors.
+All of the above files show no test errors.
 
 __Checkout App__
 
@@ -975,7 +975,7 @@ __Home App__
 - urls.py
 - views.py
 
-All of the above tests show no errors.
+All of the above files show no test errors.
 
 __Products App__
 
@@ -988,7 +988,7 @@ __Products App__
 - views.py
 - widgets.py
 
-All of the above tests show no errors.
+All of the above files show no test errors.
 
 __Profiles App__
 
@@ -1000,12 +1000,27 @@ __Profiles App__
 - urls.py
 - views.py
 
+All of the above files show no test errors.
+
 __Root Furniture Restoration Collective__
 
-custom_storages.py
-env.py
-manage.py
+- custom_storages.py
+- env.py
+- manage.py
 
+All of the above files show no test errors.
+
+</details>
+
+<details><summary>Javascript Testing</summary>
+
+Javascript was tested using JS Hint.
+
+stripe_elements.js
+- The check is clear with the exception of one undefined variable of "Stripe" however this is from another script.
+
+countryfield.js
+- The check is currently clear.
 </details>
 
 <details><summary>Lighthouse Testing</summary>
@@ -1014,9 +1029,7 @@ manage.py
 
 </details>
 
-<details><summary>Javascript Testing</summary>
 
-Javascript was tested using JS Hint.
 
 ### Bugs and Fixes
 
