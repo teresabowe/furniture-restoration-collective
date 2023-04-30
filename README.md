@@ -871,6 +871,24 @@ User Stories:
 
 </details>
 
+<details><summary>Browser Testing</summary>
+
+The site was developed using Google Chrome Version Version 112.0.5615.138 (Official Build) (64-bit). It was also tested on Version 112.0.1722.64 (Official build) (64-bit) and Firefox Browser 112.0.2 (64-bit). There are no current issues.
+
+</details>
+
+<details><summary>Responsiveness Testing</summary>
+
+The Chrome Developer Tool was used to check responsiveness as the application was being developed.
+
+The following devices were also used to check responsiveness.
+
+- iPhone 13, iOS Version 16.1.1
+- Redmi Note 9, Android Version SP1A.210812.016
+- HP Pavillion Laptop Windows 11 Home 21H2 with 15" screen and Acer KG271 27" monitor
+
+</details>
+
 ### Validator Testing
 
 <details><summary>HTML Testing</summary>
@@ -1023,15 +1041,17 @@ countryfield.js
 - The check is currently clear.
 </details>
 
+
+
 <details><summary>Lighthouse Testing</summary>
 
 - Home Page
 
 </details>
 
-
-
 ### Bugs and Fixes
+
+
 
 ## Deployment
 
