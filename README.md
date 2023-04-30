@@ -863,8 +863,6 @@ User Stories:
 - As a shop owner, I can post a product testimonial so that I can share product feedback (could-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/30" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/30/hovercard">#30</a>
 
 
-
-
 </details>
 
 <details><summary>Features Testing</summary>
@@ -1041,8 +1039,6 @@ countryfield.js
 - The check is currently clear.
 </details>
 
-
-
 <details><summary>Lighthouse Testing</summary>
 
 - Home Page
@@ -1051,7 +1047,7 @@ countryfield.js
 
 ### Bugs and Fixes
 
-
+The responsiveness on the navbar on the mobile was not satisfactory when the shopping bag has a value of over €10,000.  The search, account, shopping bag icons, and text were moved to a new line.  At the time of writing this readme, this issue is still present.
 
 ## Deployment
 
