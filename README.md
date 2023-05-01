@@ -32,16 +32,46 @@ A typical user is someone:
 
 Key features identified are:
 
-- Landing page demonstrating the products and services on offer 
-- Site administration facility to manage products, reviews and crafters
+- Landing paSignuponstrating the products and services on offer 
+- Site administration facility to manage products, reviews, and crafters
 - User signup and authentication
-- Email signup for offers and news
+- Email Signup for offers and news
 - User order management
 - A checkout facility for payments
 
-__Marketing Strategy__
+__Web Marketing Strategy__
 
-Marketing strategy.
+The web marketing strategy for Furniture Restoration Collective focuses on Search Engine Optimisation (SEO), Social Media Marketing, Email Marketing, and Content Marketing.  There are three user personas associated with the Furniture Restoration Collective, the antique and retro furniture enthusiast, the hobbyist interested in reclaiming and restoring furniture, and the commercial customer who is buying for a business premises such as a restaurant, bar or hotel.  
+This iteration of the project focuses on the former two personas, the antique and retro furniture enthusiasts, and the hobbyist interested in reclaiming and restoring furniture.  
+
+_SEO Strategy_
+
+To develop the SEO strategy both short and long-tail keywords were generated using brainstorming techniques from a list of expected user topics of interest. These were subsequently tested in Google searches to expand on the initial keywords.  The Google “People also ask” and “Related searches” were also considered in the development of the keywords.  The keywords were ranked based on relevancy, authority, and volume.  Only keywords relevant to the solutions theand  Furniture Restoration Collective can provide were retained. The authoritative nature of the chosen SEO keywords were considered in terms of delivering high quality informational content to the visitor.  Finally, the https://www.wordtracker.com/ tool was used to understand how many times the keyword has been searched for and to get ideas for other popular keywords.  The short and long-tail keywords were implemented in the code across the website in elements such as the head meta tags, head title, and headings one to six. Where possible these keywords are integrated into the content.  The home page crafter descriptions and customer reviews have important keywords imbedded.  The product descriptions also contain short and long-tail keywords.  The footer has an external link for the Design and Craft Council of Ireland.
+
+_Social Media Strategy_
+
+An initial Facebook page was set up for the Furniture Restoration Collective.  The content here reflects attempts to support the interests of the customers and potential customers.  
+
+![Facebook Page](/documentation/screenshots/facebook-page.png)
+![Facebook Company Information](/documentation/screenshots/facebook-company-information.png)
+
+The page shows a post with a picture of the products and an invitation to visit the site.  
+
+![Facebook Product Post](/documentation/screenshots/facebook-product-post.png)
+
+The page also shows a post with a picture of a crafter, a description of their profile, and a link to view their products.  
+
+![Facebook Profile Post](/documentation/screenshots/facebook-crafter-profile-post.png)
+
+_Email Marketing Strategy_
+
+There is an opportunity to signup for the latest news and special offers.  The Mailchimp application has been implemented so that email campaigns can be set up and managed.
+
+![Mailchimp Newsletter Signup](/documentation/screenshots/mailchimp-email-signup.png)
+
+_Content Marketing Strategy_
+
+The content marketing strategy will focus on a company blog which will be implemented on the website.  It is intended that this will be completed in the next iteration of the website.
 
 ### Scope
 
@@ -305,7 +335,7 @@ The hero image on the home page shows a restored piece of furniture overlayed wi
 
 ---
 
-The crafters involved in the Furniture Restoration Collective are key to its success and therefore it is important to give the visitor an insight into who they are and what their specialities are.  Their images are shown on the home page alng with a brief summary of their backgrounds.  Where possible any relevant SEO keywords have been included to improve web ranking.
+The crafters involved in the Furniture Restoration Collective are key to its success and therefore it is important to give the visitor an insight into who they are and what their specialities are.  Their images are shown on the home page along with a brief summary of their backgrounds. Where possible any relevant SEO keywords have been included to improve web ranking.
 
 ![Crafters](/documentation/screenshots/crafters.png)
 
@@ -1146,9 +1176,9 @@ The responsiveness on the navbar on the mobile was not satisfactory when the sho
 
 - Commit and push the changes to gitpod as normal
 - Login to Heroku from the command line
-- Enter heroku login -i
-- Enter the email address to login to Heroku
-- The login in credentials to be entered here my differ. If MFA/2FA is enabled, the account login name and Heroku API key are required.
+- Enter Heroku login -i
+- Enter the email address to log in to Heroku
+- The login in credentials to be entered here may differ. If MFA/2FA is enabled, the account login name and Heroku API key are required.
 - If needed get a list of the apps on Heroku by entering "heroku apps" at the command line.
 - To initialise remote enter
 
