@@ -234,6 +234,7 @@ def load_subcategories(request):
     category_id = request.GET.get('name')
     subcategories = Product.objects.filter(category_id=category_id) &\
         Product.objects.filter(quote="Y")
+    print(subcategories)
     return render(request,
                   'products/subcategory_detail_dropdown_list_options.html',
                   {'subcategories': subcategories})

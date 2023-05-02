@@ -46,7 +46,7 @@ This iteration of the project focuses on the former two personas, the antique an
 
 _SEO Strategy_
 
-To develop the SEO strategy both short and long-tail keywords were generated using brainstorming techniques from a list of expected user topics of interest. These were subsequently tested in Google searches to expand on the initial keywords.  The Google “People also ask” and “Related searches” were also considered in the development of the keywords.  The keywords were ranked based on relevancy, authority, and volume.  Only keywords relevant to the solutions theand  Furniture Restoration Collective can provide were retained. The authoritative nature of the chosen SEO keywords were considered in terms of delivering high quality informational content to the visitor.  Finally, the https://www.wordtracker.com/ tool was used to understand how many times the keyword has been searched for and to get ideas for other popular keywords.  The short and long-tail keywords were implemented in the code across the website in elements such as the head meta tags, head title, and headings one to six. Where possible these keywords are integrated into the content.  The home page crafter descriptions and customer reviews have important keywords imbedded.  The product descriptions also contain short and long-tail keywords.  The footer has an external link for the Design and Craft Council of Ireland.
+To develop the SEO strategy both short and long-tail keywords were generated using brainstorming techniques from a list of expected user topics of interest. These were subsequently tested in Google searches to expand on the initial keywords.  The Google “People also ask” and “Related searches” were also considered in the development of the keywords.  The keywords were ranked based on relevancy, authority, and volume.  Only keywords relevant to the solutions the Furniture Restoration Collective can provide were retained. The authoritative nature of the chosen SEO keywords were considered in terms of delivering high quality informational content to the visitor.  Finally, the https://www.wordtracker.com/ tool was used to understand how many times the keyword has been searched for and to get ideas for other popular keywords.  The short and long-tail keywords were implemented in the code across the website in elements such as the head meta tags, head title, and headings one to six. Where possible these keywords are integrated into the content.  The home page crafter descriptions and customer reviews have important keywords imbedded.  The product descriptions also contain short and long-tail keywords.  The footer has an external link for the Design and Craft Council of Ireland.
 
 _Social Media Strategy_
 
@@ -812,10 +812,10 @@ Pass/Fail: Pass
 
 ---
 
-- As a shopper, I can view order confirmation so that I can check that I have made the correct purchase (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/19" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/197/hovercard">#19</a>
+As a shopper, I can view order confirmation so that I can check that I have made the correct purchase (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/19" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/197/hovercard">#19</a>
 
 
-1.  Once the Complete Order is pressed, the order cofirmation is shown
+1.  Once the Complete Order is pressed, the order confirmation is shown
 
 Expected Result: The correct purchase was made.
 
@@ -825,7 +825,7 @@ Pass/Fail: Pass
 
 ---
 
-As a shopper, I can receive an email to confirm the purchase is complete so that I can I have my own record of the transaction (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/20" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/20/hovercard">#20</a>
+As a shopper, I can receive an email to confirm the purchase is complete so that I can have my record of the transaction (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/20" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/20/hovercard">#20</a>
 
 1.  Once the Order Confirmation is shown the user will receive an email confirming the order number
 
@@ -844,7 +844,7 @@ EPIC: Quote for Custom Restore
 
 User Stories:
 
-- As a site visitor, I can get a quotation so that I can find out the cost of my restoration project (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/35" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/35/hovercard">#35</a>
+As a site visitor, I can get a quotation so that I can find out the cost of my restoration project (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/35" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/35/hovercard">#35</a>
 
 1. Click on the Get a Quote button from the landing page
 2. Complete the Quotation Form using the dropdown menus
@@ -866,31 +866,144 @@ User Stories:
 
 - As a shop owner, I can add products in user interface so that I can easily keep my store up to date with available products (should-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/31" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/31/hovercard">#31</a>
 
-- As a shop owner, I can delete products in user interface so that I can ensure the product inventory is up to date (should-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/32" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/32/hovercard">#32</a>
+1. Log in as an administrator to the site
+2. Click on the Product Management menu
 
-- As a shop owner, I can view products in User Interface so that I can review the price, and description, understand the background of the product, learn about the craftsperson, and view the product image (should-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/33" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/33/hovercard">#33</a>
+![Add a Product](/documentation/screenshots/add-a-product.png)
+
+3. Complete the form including the upload of a product image
+4. Click Add Product
+
+Expected Result: The new product is listed on the product list.
+
+Actual Result: The new product is listed on the product list.
+
+Pass/Fail: Pass
+
+
+As a shop owner, I can delete products in user interface so that I can ensure the product inventory is up to date (should-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/32" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/32/hovercard">#32</a>
+
+1. Log in as an administrator to the site
+2. Click on the Product Management menu
+
+![Product List](/documentation/screenshots/product-list.png)
+
+3. Click on the red delete icon beside the product to be deleted
+
+Expected Result: The item is deleted and no longer listed on the product list.
+
+Actual Result: The item is deleted and no longer listed on the product list.
+
+Pass/Fail: Pass
+
+As a shop owner, I can view products in User Interface so that I can review the price, and description, understand the background of the product, learn about the craftsperson, and view the product image (should-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/33" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/33/hovercard">#33</a>
+
+1. Log in as an administrator to the site
+2. Click on the Product Management menu
+3. Click on the orange view icon beside the product to be viewed
+
+Expected Result: The product details can be viewed.
+
+Actual Result: The product details can be viewed.
+
+Pass/Fail: Pass
+
+---
 
 - As a shop owner, I can edit products in user interface so that I can easily keep my store up to date with available products (should-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/36" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/36/hovercard">#36</a>
+
+
+1. Log in as an administrator to the site
+2. Click on the Product Management menu
+3. Click on the blue edit icon beside the product to be edited
+4. Edit the product
+5. Click on the Update Product button
+
+Expected Result: The product details can be updated.
+
+Actual Result: The product details can be updated.
+
+Pass/Fail: Pass
+
+---
 
 EPIC: Crafter Profiles
 
 User Stories:
 
-- As a shop owner, I can add a crafter profile so that I can record information about the crafter community (could-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/25" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/25/hovercard">#25</a>
+As a shop owner, I can add a crafter profile so that I can record information about the crafter community (could-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/25" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/25/hovercard">#25</a>
 
-- As a shop owner, I can view a crafter profile so that I can ensure the crafter profile is up to date (could-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/26" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/26/hovercard">#26</a>
+1. Log in as an administrator to the site
+2. Goto https://furniture-restoration.herokuapp.com/admin to open the site administration application
+3. Click on Crafters inside the Products app where a list of crafters will be shown
+4. To add a crafter, click on add crafter in the top right corner
+5. Complete the form and click Save
 
-- As a shop owner, I can update a crafter profile so that I can keep the crafter profile up to date (could-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/27" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/27/hovercard">#27</a>
+![Add a Crafter](/documentation/screenshots/add-crafter.png)
 
-- As a shop owner, I can delete a crafter profile so that I can remove a crafter profile that is no longer relevant (could-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/28" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/28/hovercard">#28</a>
+Expected Result: The new crafter is shown on the crafter list.
+
+Actual Result: The new crafter is shown on the crafter list.
+
+Pass/Fail: Pass
+
+---
+
+As a shop owner, I can view a crafter profile so that I can ensure the crafter profile is up to date (could-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/26" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/26/hovercard">#26</a>
+
+As a shop owner, I can update a crafter profile so that I can keep the crafter profile up to date (could-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/27" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/27/hovercard">#27</a>
+
+As a shop owner, I can delete a crafter profile so that I can remove a crafter profile that is no longer relevant (could-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/28" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/28/hovercard">#28</a>
+
+1. Log in as an administrator to the site
+2. Goto https://furniture-restoration.herokuapp.com/admin to open the site administration application
+3. Click on Crafters inside the Products app where a list of crafters will be shown
+4. To view, update, or delete a crafter, click on first name of the crafter
+5. The details will be shown and there will be an option to change the record and save, view the record, or delete it.
+
+![View, Update or Delete a Crafter](/documentation/screenshots/update-or-view-crafter.png)
+
+Expected Result: The new crafter is shown on the crafter list.
+
+Actual Result: The new crafter is shown on the crafter list.
+
+Pass/Fail: Pass
+
+---
 
 EPIC: Product Testimonials
 
 User Stories:
 
-- As a shopper, I can add a product testimonial so that I can give product feedback (could-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/29" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/29/hovercard">#29</a>
+As a shopper, I can add a product testimonial so that I can give product feedback (could-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/29" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/29/hovercard">#29</a>
 
-- As a shop owner, I can post a product testimonial so that I can share product feedback (could-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/30" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/30/hovercard">#30</a>
+1. Login as a registered user to the site
+2. Click on the Account menu
+2. Click on the Profile menu item
+3. Choose the plus symbol beside the text "We would love to hear any feedback you may have! Please add your comments here."
+4. The product review form opens and the user can complete the form and add the review
+
+Expected Result: The review form is completed and submitted.
+
+Actual Result: The review form is completed and submitted.
+
+Pass/Fail: Pass
+
+As a shop owner, I can post a product testimonial so that I can share product feedback (could-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/30" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/30/hovercard">#30</a>
+
+1. Got to web address https://furniture-restoration.herokuapp.com/admin
+2. Login using the administrator account
+3. Select Reviewss under the Products app
+4. A list of reviews will be shown
+5. THe administrator can click on the review text and choose whether to activate it or not.  By default, the reviews are not active when posted by the user.
+
+![Activate a Review](/documentation/screenshots/product-review-activation.png)
+
+Expected Result: The review can be shared as product feedback.
+
+Actual Result: The review can be shared as product feedback.
+
+Pass/Fail: Pass
 
 
 </details>
