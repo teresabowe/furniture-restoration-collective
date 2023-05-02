@@ -880,6 +880,7 @@ Actual Result: The new product is listed on the product list.
 
 Pass/Fail: Pass
 
+---
 
 As a shop owner, I can delete products in user interface so that I can ensure the product inventory is up to date (should-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/32" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/32/hovercard">#32</a>
 
@@ -895,6 +896,8 @@ Expected Result: The item is deleted and no longer listed on the product list.
 Actual Result: The item is deleted and no longer listed on the product list.
 
 Pass/Fail: Pass
+
+---
 
 As a shop owner, I can view products in User Interface so that I can review the price, and description, understand the background of the product, learn about the craftsperson, and view the product image (should-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/33" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/33/hovercard">#33</a>
 
@@ -989,6 +992,8 @@ Actual Result: The review form is completed and submitted.
 
 Pass/Fail: Pass
 
+---
+
 As a shop owner, I can post a product testimonial so that I can share product feedback (could-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/30" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/30/hovercard">#30</a>
 
 1. Got to web address https://furniture-restoration.herokuapp.com/admin
@@ -1008,6 +1013,8 @@ Pass/Fail: Pass
 
 </details>
 
+---
+
 <details><summary>Features Testing</summary>
 
 </details>
@@ -1024,9 +1031,9 @@ The Chrome Developer Tool was used to check responsiveness as the application wa
 
 The following devices were also used to check responsiveness.
 
-- iPhone 13, iOS Version 16.1.1
+- iPhone 13, iOS Version 16.3.1
 - Redmi Note 9, Android Version SP1A.210812.016
-- HP Pavillion Laptop Windows 11 Home 21H2 with 15" screen and Acer KG271 27" monitor
+- HP Pavillion Laptop Windows 11 Home 22H2 with 15" screen and Acer KG271 27" monitor
 
 </details>
 
