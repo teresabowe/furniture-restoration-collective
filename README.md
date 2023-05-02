@@ -130,13 +130,13 @@ EPIC: Shopping Cart
 
 User Stories:
 
-- As a shopper, I can view items in the shopping cart so that I can view total amount due and a list of items I am purchasing (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/17" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/17/hovercard">#17</a>
+- As a shopper, I can view items in the shopping cart so that I can view the total amount due and a list of items I am purchasing (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/17" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/17/hovercard">#17</a>
 
 - As a shopper, I can enter payment details so that I can checkout as quickly and securely as possible (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/18" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/187/hovercard">#18</a>
 
 - As a shopper, I can view order confirmation so that I can check that I have made the correct purchase (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/19" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/197/hovercard">#19</a>
 
-- As a shopper, I can receive an email to confirm the purchase is complete so that I can I have my own record of the transaction (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/20" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/20/hovercard">#20</a>
+- As a shopper, I can receive an email to confirm the purchase is complete so that I can have my own record of the transaction (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/20" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/20/hovercard">#20</a>
 
 EPIC: Quote for Custom Restore
 
@@ -148,9 +148,9 @@ EPIC: Setup UI to Manage Products
 
 User Stories:
 
-- As a shop owner, I can add products in user interface so that I can easily keep my store up to date with available products (should-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/31" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/31/hovercard">#31</a>
+- As a shop owner, I can add products in the user interface so that I can easily keep my store up to date with available products (should-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/31" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/31/hovercard">#31</a>
 
-- As a shop owner, I can delete products in user interface so that I can ensure the product inventory is up to date (should-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/32" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/32/hovercard">#32</a>
+- As a shop owner, I can delete products in the user interface so that I can ensure the product inventory is up to date (should-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/32" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/32/hovercard">#32</a>
 
 - As a shop owner, I can view products in User Interface so that I can review the price, and description, understand the background of the product, learn about the craftsperson, and view the product image (should-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/33" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/33/hovercard">#33</a>
 
@@ -781,7 +781,7 @@ EPIC: Shopping Cart
 
 User Stories:
 
-As a shopper, I can view items in the shopping cart so that I can view total amount due and a list of items I am purchasing (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/17" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/17/hovercard">#17</a>
+As a shopper, I can view items in the shopping cart so that I can view the total amount due and a list of items I am purchasing (must-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/17" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/17/hovercard">#17</a>
 
 1. From the product detail pages, add two products to the shopping cart
 2. Click on the shopping cart in the top right corner of the navbar
@@ -882,7 +882,7 @@ Pass/Fail: Pass
 
 ---
 
-As a shop owner, I can delete products in user interface so that I can ensure the product inventory is up to date (should-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/32" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/32/hovercard">#32</a>
+As a shop owner, I can delete products from the user interface so that I can ensure the product inventory is up to date (should-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/32" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/32/hovercard">#32</a>
 
 1. Log in as an administrator to the site
 2. Click on the Product Management menu
@@ -994,7 +994,7 @@ Pass/Fail: Pass
 
 ---
 
-As a shop owner, I can post a product testimonial so that I can share product feedback (could-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/30" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/30/hovercard">#30</a>
+As a shop owner, I can post a product testimonial on the home page so that I can share product feedback (could-have/complete) <a href="https://github.com/teresabowe/furniture-restoration-collective/issues/30" data-hovercard-type="issue" data-hovercard-url="/teresabowe/furniture-restoration-collective/issues/30/hovercard">#30</a>
 
 1. Got to web address https://furniture-restoration.herokuapp.com/admin
 2. Login using the administrator account
@@ -1010,20 +1010,87 @@ Actual Result: The review can be shared as product feedback.
 
 Pass/Fail: Pass
 
+---
 
 </details>
-
----
 
 <details><summary>Features Testing</summary>
 
+A 404 Error Page is loaded when a page does not exist.
+
+1. Got to web address https://furniture-restoration.herokuapp.com/asd
+
+![404 Error Page](/documentation/screenshots/404-error-page.png)
+
+Expected Result: The 404 error page is loaded with a link to the Furniture Restoration Collective home page.
+
+Actual Result: The 404 error page is loaded with a link to the Furniture Restoration Collective home page.
+
+Pass/Fail: Pass
+
+---
+
+When the logo Furniture Restoration Collective is clicked from any page on the Desktop the user is redirected to the home page
+
+1. Got to web address https://furniture-restoration.herokuapp.com/products
+2. Click on the Furniture Restoration Collective logo
+
+Expected Result: The user is redirected to the Furniture Restoration Collective home page.
+
+Actual Result: The user is redirected to the Furniture Restoration Collective home page.
+
+Pass/Fail: Pass
+
+---
+
+When the logo Furniture Restoration Collective is clicked from any page on Mobile the user is redirected to the home page
+
+1. Got to web address https://furniture-restoration.herokuapp.com/products
+2. Click on the hamburger icon in the top left corner and choose Home
+
+Expected Result: The user is redirected to the Furniture Restoration Collective home page.
+
+Actual Result: The user is redirected to the Furniture Restoration Collective home page.
+
+Pass/Fail: Pass
+
+---
+
+The social media links will load the correct website.
+
+1. Got to web address https://furniture-restoration.herokuapp.com
+2. Go to the bottom of the page and click on each of the Social links
+
+Expected Result: A new page is opened and the social media page is shown.
+
+Actual Result: A new page is opened and the social media page is shown.
+
+Pass/Fail: Pass
+
+---
+
+The subscription signup is functioning.
+
+1. Got to web address https://furniture-restoration.herokuapp.com
+2. Go to the bottom of the page and enter the email address into the input field in the subscription section
+
+Expected Result: The user receives a "Thank you for subscribing!" message and the email address is listed in the Mailchimp Audience.
+
+Actual Result: The user receives a "Thank you for subscribing!" message and the email address is listed in the Mailchimp Audience.
+
+Pass/Fail: Pass
+
+___
+
 </details>
+
 
 <details><summary>Browser Testing</summary>
 
 The site was developed using Google Chrome Version Version 112.0.5615.138 (Official Build) (64-bit). It was also tested on Version 112.0.1722.64 (Official build) (64-bit) and Firefox Browser 112.0.2 (64-bit). There are no current issues.
 
 </details>
+
 
 <details><summary>Responsiveness Testing</summary>
 
