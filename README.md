@@ -32,8 +32,8 @@ A typical user is someone:
 
 Key features identified are:
 
-- Landing paSignuponstrating the products and services on offer 
-- Site administration facility to manage products, reviews, and crafters
+- Landing page demonstrating the products and services on offer 
+- Site administration facility to manage products, reviews and crafters
 - User signup and authentication
 - Email Signup for offers and news
 - User order management
@@ -41,7 +41,12 @@ Key features identified are:
 
 __Web Marketing Strategy__
 
-The web marketing strategy for Furniture Restoration Collective focuses on Search Engine Optimisation (SEO), Social Media Marketing, Email Marketing, and Content Marketing.  There are three user personas associated with the Furniture Restoration Collective, the antique and retro furniture enthusiast, the hobbyist interested in reclaiming and restoring furniture, and the commercial customer who is buying for a business premises such as a restaurant, bar or hotel.  
+The web marketing strategy for Furniture Restoration Collective focuses on Search Engine Optimisation (SEO), Social Media Marketing, Email Marketing, and Content Marketing.  There are three user personas associated with the Furniture Restoration Collective:
+
+- the antique and retro furniture enthusiast
+- the hobbyist interested in reclaiming and restoring furniture
+- the commercial customer who is buying for a business premises such as a restaurant, bar or hotel
+
 This iteration of the project focuses on the former two personas, the antique and retro furniture enthusiasts, and the hobbyist interested in reclaiming and restoring furniture.  
 
 _SEO Strategy_
@@ -231,9 +236,6 @@ _Mobile Product Page_
 
 ![Wireframe](/documentation/screenshots/mobile-wireframe-all.png)
 
-__Database Schema__
-
-Database schema.
 
 ### Surface Design
 
@@ -321,7 +323,7 @@ The delivery banner is currently being used to communicate a free delivery messa
 
 __Footer__
 
-The footer offers the user an opportunity to communicate with the organisation.  There are social media links to Facebook, Instagram and Pinterest along with information for email and phone communication.  The user can aslo subscribe to the mailing list to receive product offers and a copy of the newsletter.  The subscribe button is emphasised in a bright colour.  Having a mailing list of interested visitors and potential customers is a key part of the marketing strategy.  The footer also shows that the Furniture Restoration Collective is a member of the Design and Crafts Council of Ireland thus showing that the organisation is authentic.
+The footer offers the user an opportunity to communicate with the organisation.  There are social media links to Facebook, Instagram and Pinterest along with information for email and phone communication.  The user can also subscribe to the mailing list to receive product offers and a copy of the newsletter.  The subscribe button is emphasised in a bright colour.  Having a mailing list of interested visitors and potential customers is a key part of the marketing strategy.  The footer also shows that the Furniture Restoration Collective is a member of the Design and Crafts Council of Ireland thus showing that the organisation is authentic.
 
 ![Footer](/documentation/screenshots/footer.png)
 
@@ -407,7 +409,7 @@ When the user clicks on the get a quote button they are brought to the quotation
 
 ---
 
-The qotation detail shows further information about the quotation in terms of assumptions, transport details, and timing.  Should the user wish to proceed with the restoration work, they can add the service to their bag.
+The quotation detail shows further information about the quotation in terms of assumptions, transport details, and timing.  Should the user wish to proceed with the restoration work, they can add the service to their bag.
 
 ![Quotation Detail](/documentation/screenshots/quotation-detail.png)
 
@@ -484,7 +486,7 @@ The following features will be delivered in future iterations of the project.
 
 - [CSS](https://www.w3.org/Style/CSS/) to style the HTML pages
 
-- [JavaScript](https://www.javascript.com//) no was used to create custom dropdown menus in forms
+- [JavaScript](https://www.javascript.com//) was used to create custom dropdown menus in forms
 
 ### Frameworks
 
@@ -1181,7 +1183,7 @@ __Checkout App__
 
 All of the above tests show no errors with the exception of models.py.  Adjusting the Line too long on lines 46 and 48 had an adverse effect on checkout functionality during testing.
 
-The error after completing the order showed:
+The error after removing the line too long error:
 
     TypeError at /checkout/
     '<' not supported between instances of 'method' and 'int'
@@ -1254,6 +1256,7 @@ stripe_elements.js
 
 countryfield.js
 - The check is currently clear.
+
 </details>
 
 <details><summary>Lighthouse Testing</summary>
@@ -1272,6 +1275,7 @@ Mobile
 
 - The responsiveness on the navbar on the mobile was not satisfactory when the shopping bag has a value of over €10,000.  The search, account, shopping bag icons, and text were moved to a new line.  At the time of writing this readme, this issue is still present.
 - Lighthouse testing for mobile shows that performance needs improvement.  The tool suggests to eliminate render-blocking resources.  A test of removing the Stripe <script src="https://js.stripe.com/v3/"></script> from the core js block in the head element would indicate that performance could indeed improve.  Currently the alteration of the suggested render-blocking resources has not been implemented.
+- The quotation form is functioning as programmed however all categories are showing in the form currently. This has been documented previously during the product UI testing.  A solution needs to be found whereby only categories associated with quotations should be listed in the dropdown menu.
 
 ## Deployment
 
