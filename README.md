@@ -1258,13 +1258,20 @@ countryfield.js
 
 <details><summary>Lighthouse Testing</summary>
 
-- Home Page
+Desktop
+
+![Desktop Lighthouse Testing](/documentation/screenshots/lighthouse-desktop.png)
+
+Mobile
+
+![Mobile Lighthouse Testing](/documentation/screenshots/lighthouse-mobile.png)
 
 </details>
 
 ### Bugs and Fixes
 
-The responsiveness on the navbar on the mobile was not satisfactory when the shopping bag has a value of over €10,000.  The search, account, shopping bag icons, and text were moved to a new line.  At the time of writing this readme, this issue is still present.
+- The responsiveness on the navbar on the mobile was not satisfactory when the shopping bag has a value of over €10,000.  The search, account, shopping bag icons, and text were moved to a new line.  At the time of writing this readme, this issue is still present.
+- Lighthouse testing for mobile shows that performance needs improvement.  The tool suggests to eliminate render-blocking resources.  A test of removing the Stripe <script src="https://js.stripe.com/v3/"></script> from the core js block in the head element would indicate that performance could indeed improve.  Currently the alteration of the suggested render-blocking resources has not been implemented.
 
 ## Deployment
 
