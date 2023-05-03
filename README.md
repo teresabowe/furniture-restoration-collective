@@ -45,17 +45,17 @@ The web marketing strategy for Furniture Restoration Collective focuses on Searc
 
 - the antique and retro furniture enthusiast
 - the hobbyist interested in reclaiming and restoring furniture
-- the commercial customer who is buying for a business premises such as a restaurant, bar or hotel
+- the commercial customer who is buying for a business premises such as a restaurant, bar, or hotel
 
 This iteration of the project focuses on the former two personas, the antique and retro furniture enthusiasts, and the hobbyist interested in reclaiming and restoring furniture.  
 
 _SEO Strategy_
 
-To develop the SEO strategy both short and long-tail keywords were generated using brainstorming techniques from a list of expected user topics of interest. These were subsequently tested in Google searches to expand on the initial keywords.  The Google “People also ask” and “Related searches” were also considered in the development of the keywords.  The keywords were ranked based on relevancy, authority, and volume.  Only keywords relevant to the solutions the Furniture Restoration Collective can provide were retained. The authoritative nature of the chosen SEO keywords were considered in terms of delivering high quality informational content to the visitor.  Finally, the https://www.wordtracker.com/ tool was used to understand how many times the keyword has been searched for and to get ideas for other popular keywords.  The short and long-tail keywords were implemented in the code across the website in elements such as the head meta tags, head title, and headings one to six. Where possible these keywords are integrated into the content.  The home page crafter descriptions and customer reviews have important keywords imbedded.  The product descriptions also contain short and long-tail keywords.  The footer has an external link for the Design and Craft Council of Ireland.
+To develop the SEO strategy both short and long-tail keywords were generated using brainstorming techniques from a list of expected user topics of interest. These were subsequently tested in Google searches to expand on the initial keywords.  The Google “People also ask” and “Related searches” were also considered in the development of the keywords.  The keywords were ranked based on relevancy, authority, and volume.  Only keywords relevant to the solutions the Furniture Restoration Collective can provide were retained. The authoritative nature of the chosen SEO keywords were considered in terms of delivering high quality informational content to the visitor.  Finally, the https://www.wordtracker.com/ tool was used to understand how many times the keyword has been searched for and to get ideas for other popular keywords.  The short and long-tail keywords were implemented in the code across the website in elements such as the head meta tags, head title, and headings one to six. Where possible these keywords are integrated into the content.  The home page crafter descriptions and customer reviews have important keywords imbedded.  The product descriptions also contain short and long-tail keywords.  The footer has an external link to the Design and Craft Council of Ireland.
 
 _Social Media Strategy_
 
-An initial Facebook page was set up for the Furniture Restoration Collective.  The content here reflects attempts to support the interests of the customers and potential customers.  
+An initial Facebook page was set up for the Furniture Restoration Collective.  The content here reflects attempts to support the interests of the customers and potential customers.  This Facebook page was deleted before project submission as there was some initial engagement from the general public about the services offered.
 
 ![Facebook Page](/documentation/screenshots/facebook-page.png)
 ![Facebook Company Information](/documentation/screenshots/facebook-company-information.png)
@@ -279,7 +279,7 @@ Along with being a marketing tool, the company name or logo serves as a home pag
 
 ---
 
-On mobile and mediaum screens the home link is present in the dropdown menu.
+On mobile and medium screens the home link is present in the dropdown menu.
 
 ![Navigation Bar](/documentation/screenshots/home-link-mobile.png)
 
@@ -1276,6 +1276,7 @@ Mobile
 - The responsiveness on the navbar on the mobile was not satisfactory when the shopping bag has a value of over €10,000.  The search, account, shopping bag icons, and text were moved to a new line.  At the time of writing this readme, this issue is still present.
 - Lighthouse testing for mobile shows that performance needs improvement.  The tool suggests to eliminate render-blocking resources.  A test of removing the Stripe <script src="https://js.stripe.com/v3/"></script> from the core js block in the head element would indicate that performance could indeed improve.  Currently the alteration of the suggested render-blocking resources has not been implemented.
 - The quotation form is functioning as programmed however all categories are showing in the form currently. This has been documented previously during the product UI testing.  A solution needs to be found whereby only categories associated with quotations should be listed in the dropdown menu.
+- In the product UI to add a product, the select new image button needs styling.
 
 ## Deployment
 
